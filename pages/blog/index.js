@@ -14,7 +14,14 @@ export default BlogPosts;
 
 export function getStaticProps() {
   const posts = allBlogs.map((post) =>
-    pick(post, ["slug", "title", "subTitle", "excerpt", "publishedAt"])
+    pick(post, [
+      "slug",
+      "title",
+      "subTitle",
+      "excerpt",
+      "category",
+      "publishedAt",
+    ])
   );
 
   return { props: { posts } };

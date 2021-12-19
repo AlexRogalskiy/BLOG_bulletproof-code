@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://blog.bulletproof-code.com/sitemap.xml
+Sitemap: https://bulletproof-code.com/sitemap.xml

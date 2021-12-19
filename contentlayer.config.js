@@ -26,6 +26,7 @@ const Blog = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     subTitle: { type: "string", required: true },
+    category: { type: "string", required: true },
     publishedAt: { type: "string", required: true },
     excerpt: { type: "string", required: true },
     image: { type: "string", required: true },
@@ -40,6 +41,7 @@ const EBook = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     subTitle: { type: "string", required: true },
+    category: { type: "string", required: true },
     publishedAt: { type: "string", required: true },
     excerpt: { type: "string", required: true },
     image: { type: "string", required: true },

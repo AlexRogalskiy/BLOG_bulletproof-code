@@ -1,13 +1,20 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Header from "./Header";
+import Footer from "./Footer";
 
-const Container = ({ children, ...customMeta }) => {
+const Container = ({
+  children,
+  hasHeader = true,
+  hasFooter = true,
+  ...customMeta
+}) => {
   const router = useRouter();
   const meta = {
     title:
       "Bulletproof Blog | Front-End Developer Tips, Techniques, and Tutorials",
     description: `Front-end developer tsk`,
-    image: "https://blog.bulletproof-code.com/static/images/banner.png",
+    image: "https://bulletproof-code.com/static/images/banner.png",
     type: "website",
     ...customMeta,
   };
@@ -20,11 +27,11 @@ const Container = ({ children, ...customMeta }) => {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://blog.bulletproof-code.com${router.asPath}`}
+          content={`https://bulletproof-code.com${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://blog.bulletproof-code.com${router.asPath}`}
+          href={`https://bulletproof-code.com${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Bulletproof Code" />
@@ -40,9 +47,9 @@ const Container = ({ children, ...customMeta }) => {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      {/* TSK: Header */}
+      {hasHeader && <Header />}
       <main>{children}</main>
-      {/* TSK: Footer */}
+      {hasFooter && <Footer />}
     </div>
   );
 };

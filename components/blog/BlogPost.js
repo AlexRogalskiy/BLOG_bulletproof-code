@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const BlogPost = ({ title, subTitle, excerpt, slug }) => {
+const BlogPost = ({ title, subTitle, category, excerpt, slug }) => {
   return (
     <article>
       <Link href={`/blog/${slug}`}>

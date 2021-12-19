@@ -2,6 +2,12 @@
 
 ## MVP
 
+1. **CODE** -
+2. **CODE** -
+3. **CODE** -
+4. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
+5. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
+
 ---
 
 ---
