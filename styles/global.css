@@ -27,7 +27,7 @@
   }
 
   .blog h2 {
-    @apply text-4xl font-bold my-4;
+    @apply text-2xl md:text-4xl font-bold my-4;
   }
 
   .blog h3 {
@@ -51,6 +51,6 @@
   }
 
   .blog a {
-    @apply text-blue-500 font-medium underline text-xl;
+    @apply text-blue-500 font-medium underline md:text-xl;
   }
 }

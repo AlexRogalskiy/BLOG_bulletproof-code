@@ -6,7 +6,6 @@ import Image from "next/image";
 import { v4 } from "uuid";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
-import { classNames } from "../../utils/css.helpers";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
 import TestForm from "../../components/CTA/TestForm";
@@ -29,8 +28,10 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
         <div>Loading…</div>
       ) : (
         <>
-          <h1 className="text-5xl font-black text-gray-900">{title}</h1>
-          <h2 className="text-3xl font-semibold text-blue-800 mt-3">
+          <h1 className="text-3xl md:text-5xl font-black text-gray-900">
+            {title}
+          </h1>
+          <h2 className="text-xl md:text-3xl font-semibold text-blue-800 mt-3">
             {subTitle}
           </h2>
           {categories.map((category) => (
@@ -42,7 +43,7 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
             </div>
           ))}
 
-          <div className="relative h-96 w-full my-5">
+          <div className="relative h-64 md:h-96 w-full my-5">
             <Image
               src={coverImage}
               alt={title + "hero image"}
