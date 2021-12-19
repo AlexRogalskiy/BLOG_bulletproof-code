@@ -34,9 +34,11 @@
 - Add Sitemap
 - Add NextAuth
 - Change React Syntax Highlighter Styles
+- Jump to Section
 
 ### Optimizations
 
 - Add Preact
 - Add Motion Animations
 - Add Robots.txt
+- Add Font Select Colors & Hover States

@@ -17,8 +17,8 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
 
   return (
     <BlogPostLayout postDetails={frontMatter}>
-      <h1>{title}</h1>
-      <h2>{subTitle}</h2>
+      <h1 className="text-5xl font-black text-gray-900">{title}</h1>
+      <h2 className="">{subTitle}</h2>
       {categories.map((category) => (
         <div
           key={v4()}
@@ -30,6 +30,7 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
           {category.name}
         </div>
       ))}
+
       <div className="relative h-96 w-full">
         <Image
           src={coverImage}
@@ -37,15 +38,18 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+          className="rounded-md shadow-lg"
           priority
         />
       </div>
 
-      <MDXRemote
-        {...mdxSource}
-        components={{ SyntaxHighlighter, TestForm }}
-        lazy={true}
-      />
+      <section className="max-w-prose mx-auto blog">
+        <MDXRemote
+          {...mdxSource}
+          components={{ SyntaxHighlighter, TestForm }}
+          lazy={true}
+        />
+      </section>
     </BlogPostLayout>
   );
 };

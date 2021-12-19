@@ -12,7 +12,7 @@ const BlogPostLayout = ({ children, postDetails }) => {
       type="article"
     >
       <Header />
-      <main className="max-w-7xl mx-auto">{children}</main>
+      <main className="max-w-3xl mx-auto mt-12">{children}</main>
       <Footer />
     </Container>
   );
