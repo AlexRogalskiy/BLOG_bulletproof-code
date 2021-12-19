@@ -1,4 +1,4 @@
-import Container from "../components/structure/Container";
+import Container from "./Container";
 
 const SqueezeLayout = ({ children, offer }) => {
   return (

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Header from "./Header";
+import Header from "../structure/Header";
 import Footer from "./Footer";
 
 const Container = ({
