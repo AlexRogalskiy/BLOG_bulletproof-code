@@ -26,32 +26,32 @@ const Blog = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     subTitle: { type: "string", required: true },
-    category: { type: "string", required: true },
     publishedAt: { type: "string", required: true },
     excerpt: { type: "string", required: true },
     image: { type: "string", required: true },
+    category: { type: "string", required: true },
   },
   computedFields,
 }));
 
-const EBook = defineDocumentType(() => ({
-  name: "EBook",
-  filePathPattern: "eBook/*.mdx",
-  bodyType: "mdx",
-  fields: {
-    title: { type: "string", required: true },
-    subTitle: { type: "string", required: true },
-    category: { type: "string", required: true },
-    publishedAt: { type: "string", required: true },
-    excerpt: { type: "string", required: true },
-    image: { type: "string", required: true },
-  },
-  computedFields,
-}));
+// const EBook = defineDocumentType(() => ({
+//   name: "EBook",
+//   filePathPattern: "eBook/*.mdx",
+//   bodyType: "mdx",
+//   fields: {
+//     title: { type: "string", required: true },
+//     subTitle: { type: "string", required: true },
+//     publishedAt: { type: "string", required: true },
+//     excerpt: { type: "string", required: true },
+//     image: { type: "string", required: true },
+//     category: { type: "string", required: true },
+//   },
+//   computedFields,
+// }));
 
 const contentLayerConfig = makeSource({
   contentDirPath: "data",
-  documentTypes: [Blog, EBook],
+  documentTypes: [Blog],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
