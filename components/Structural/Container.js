@@ -1,14 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Header from "../structure/Header";
-import Footer from "./Footer";
 
-const Container = ({
-  children,
-  hasHeader = true,
-  hasFooter = true,
-  ...customMeta
-}) => {
+const Container = ({ children, ...customMeta }) => {
   const router = useRouter();
   const meta = {
     title:
@@ -20,7 +13,7 @@ const Container = ({
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
+    <>
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -47,10 +40,8 @@ const Container = ({
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      {hasHeader && <Header />}
-      <main>{children}</main>
-      {hasFooter && <Footer />}
-    </div>
+      {children}
+    </>
   );
 };
 

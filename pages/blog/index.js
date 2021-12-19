@@ -3,11 +3,12 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
+import MainLayout from "../../layouts/MainLayout";
 
 const BlogPosts = ({ posts }) => {
   console.log("posts:", posts);
   return (
-    <section>
+    <MainLayout>
       {posts.map((post, index) => (
         <Link href={"/blog/" + post.slug} passHref key={index}>
           <div className="card mb-3 pointer" style={{ maxWidth: "540px" }}>
@@ -37,7 +38,7 @@ const BlogPosts = ({ posts }) => {
           </div>
         </Link>
       ))}
-    </section>
+    </MainLayout>
   );
 };
 

@@ -33,6 +33,7 @@
 - Add RSS
 - Add Sitemap
 - Add NextAuth
+- Change React Syntax Highlighter Styles
 
 ### Optimizations
 
