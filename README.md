@@ -2,11 +2,12 @@
 
 ## MVP
 
-1. **CODE** -
-2. **CODE** -
-3. **CODE** -
-4. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
-5. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
+1. **CODE** - Header & Footer
+2. **CODE** - Blog Page w/ 2 Columns
+3. **CODE** - Opt-in Dynamic Page
+4. **CODE** - Thank You Dynamic Page (FB CTA + Downloads)
+5. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
+6. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
 
 ---
 
@@ -37,6 +38,8 @@
 - Jump to Section
 - Add comments
 - Style Scrollbar
+- Download Sticky Opt-In on Blog Post Page
+- Announcment Banner
 
 ### Optimizations
 
