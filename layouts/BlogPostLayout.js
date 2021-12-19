@@ -44,7 +44,7 @@ const BlogPostLayout = ({ children, post }) => {
         </div>
         <div className="mt-8">
           {/* TSK */}
-          <TestForm />
+          {/* <TestForm /> */}
         </div>
       </article>
     </Container>

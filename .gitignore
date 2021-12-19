@@ -2,11 +2,15 @@
 /node_modules
 /.pnp
 .pnp.js
+/.contentlayer
+.contentlayer
 
 # testing
 /coverage
 
 # next.js
+.next
+.next/
 /.next/
 /out/
 
