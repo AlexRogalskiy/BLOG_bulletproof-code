@@ -35,6 +35,8 @@
 - Add NextAuth
 - Change React Syntax Highlighter Styles
 - Jump to Section
+- Add comments
+- Style Scrollbar
 
 ### Optimizations
 

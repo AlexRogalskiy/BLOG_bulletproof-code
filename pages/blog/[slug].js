@@ -11,45 +11,57 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 
 import TestForm from "../../components/CTA/TestForm";
 import BlogPostLayout from "../../layouts/BlogPostLayout";
+import { useRouter } from "next/router";
+import Error from "next/error";
 
 const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
+  const router = useRouter();
   const { title, subTitle, coverImage, categories } = frontMatter;
+  console.log("frontMatter:", frontMatter);
+
+  if (!router.isFallback && !frontMatter?.title) {
+    return <Error statusCode={404} />;
+  }
 
   return (
     <BlogPostLayout postDetails={frontMatter}>
-      <h1 className="text-5xl font-black text-gray-900">{title}</h1>
-      <h2 className="">{subTitle}</h2>
-      {categories.map((category) => (
-        <div
-          key={v4()}
-          className={classNames(
-            `bg-${category.color}-200`,
-            "rounded-lg text-xs py-1 px-2 inline-block mr-3"
-          )}
-        >
-          {category.name}
-        </div>
-      ))}
+      {router.isFallback ? (
+        <div>Loading…</div>
+      ) : (
+        <>
+          <h1 className="text-5xl font-black text-gray-900">{title}</h1>
+          <h2 className="text-3xl font-semibold text-blue-800 mt-3">
+            {subTitle}
+          </h2>
+          {categories.map((category) => (
+            <div
+              key={v4()}
+              className={`bg-${category.color}-200 rounded-3xl py-2 px-4 font-bold text-xs inline-block mt-4 mr-2`}
+            >
+              {category.name}
+            </div>
+          ))}
 
-      <div className="relative h-96 w-full">
-        <Image
-          src={coverImage}
-          alt={title + "hero image"}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          className="rounded-md shadow-lg"
-          priority
-        />
-      </div>
-
-      <section className="max-w-prose mx-auto blog">
-        <MDXRemote
-          {...mdxSource}
-          components={{ SyntaxHighlighter, TestForm }}
-          lazy={true}
-        />
-      </section>
+          <div className="relative h-96 w-full my-5">
+            <Image
+              src={coverImage}
+              alt={title + "hero image"}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              className="rounded-md shadow-lg"
+              priority
+            />
+          </div>
+          <section className="max-w-prose mx-auto blog">
+            <MDXRemote
+              {...mdxSource}
+              components={{ SyntaxHighlighter, TestForm }}
+              lazy={true}
+            />
+          </section>
+        </>
+      )}
     </BlogPostLayout>
   );
 };
