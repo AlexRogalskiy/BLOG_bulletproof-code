@@ -2,12 +2,11 @@
 
 ## MVP
 
-1. **CODE** - Header & Footer
-2. **CODE** - Blog Page w/ 2 Columns
-3. **CODE** - Opt-in Dynamic Page
-4. **CODE** - Thank You Dynamic Page (FB CTA + Downloads)
-5. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
-6. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
+1. **CODE** - Footer
+2. **CODE** - Opt-in Dynamic Page
+3. **CODE** - Thank You Dynamic Page (FB CTA + Downloads)
+4. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
+5. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
 
 ---
 
@@ -28,6 +27,7 @@
 
 ### Features
 
+- Shiny Rainbow Header Button
 - Add Google Analytics
 - Add Facebook Pixel
 - Add ConvertKit Analytics
@@ -40,6 +40,7 @@
 - Style Scrollbar
 - Download Sticky Opt-In on Blog Post Page
 - Announcment Banner
+- Dark mode?
 
 ### Optimizations
 
@@ -47,3 +48,5 @@
 - Add Motion Animations
 - Add Robots.txt
 - Add Font Select Colors & Hover States
+- Add Accessibility
+- Think about cutting the blog post guides short and have a CTA at the bottom

@@ -6,6 +6,25 @@ import Image from "next/image";
 import MainLayout from "../../layouts/MainLayout";
 import BlogCard from "../../components/Blog/BlogCard";
 import { v4 } from "uuid";
+import BlogFeedForm from "../../components/CTA/BlogFeedForm";
+
+const myFavoriteGuides = [
+  {
+    title: "Become a PAID Front-End Developer",
+    image: "/static/images/bp-front-end/Book_Cover.png",
+    slug: "bulletproof-guide-to-becoming-a-paid-front-end-developer",
+  },
+  {
+    title: "Some Other Great Guide I Will Write",
+    image: "/static/images/bp-front-end/Book_Cover.png",
+    slug: "bulletproof-guide-to-becoming-a-paid-front-end-developer",
+  },
+  {
+    title: "Some Other Great Guide I Will Write",
+    image: "/static/images/bp-front-end/Book_Cover.png",
+    slug: "bulletproof-guide-to-becoming-a-paid-front-end-developer",
+  },
+];
 
 const BlogPosts = ({ posts }) => {
   console.log("posts:", posts);
@@ -13,44 +32,52 @@ const BlogPosts = ({ posts }) => {
     <MainLayout>
       <div className="flex justify-between">
         {/* LEFT: ARTICLES & CTA's */}
-        <section className="w-8/12 bg-white shadow-md rounded-lg">
+        {/* ARTICLE #1 */}
+        <section className="w-8/12 space-y-12">
           {posts.slice(0, 1).map((post) => (
+            <BlogCard key={v4()} postDetails={post} isPriority />
+          ))}
+
+          {/* CTA #1 */}
+          <BlogFeedForm isPriority />
+
+          {/* ARTCILES #2 & #3 */}
+          {posts.slice(1, 3).map((post) => (
+            <BlogCard key={v4()} postDetails={post} isPriority />
+          ))}
+
+          {/* CTA #2 */}
+          <BlogFeedForm />
+
+          {/* ARTICLES #4+ */}
+          {posts.slice(3).map((post) => (
             <BlogCard key={v4()} postDetails={post} />
           ))}
         </section>
 
         {/* RIGHT: BEST EBOOKS */}
-        <section className="bg-white shadow-lg w-3/12"></section>
-      </div>
-      {/* {posts.map((post, index) => (
-        <Link href={"/blog/" + post.slug} passHref key={index}>
-          <div className="card mb-3 pointer" style={{ maxWidth: "540px" }}>
-            <div className="row g-0">
-              <div className="col-md-8">
-                <div className="card-body">
-                  <h5 className="card-title">{post.frontMatter.title}</h5>
-                  <p className="card-text">{post.frontMatter.excerpt}</p>
-                  <p className="card-text">
-                    <small className="text-muted">
-                      {post.frontMatter.postedOn}
-                    </small>
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-4 m-auto">
-                <Image
-                  src={post.frontMatter.coverImage}
-                  className="img-fluid mt-1 rounded-start"
-                  alt="thumbnail"
-                  width={500}
-                  height={400}
-                  objectFit="cover"
-                />
-              </div>
-            </div>
+        <section className="bg-white shadow-lg w-3/12 h-full">
+          <h2 className="">Read my Favorite Bulletproof Guides:</h2>
+          <div className="space-y-12 my-12">
+            {myFavoriteGuides.map((guide) => (
+              <article key={v4()}>
+                <Link href={"/blog/" + guide.slug} passHref>
+                  <a>
+                    <div className="relative w-full h-64">
+                      <Image
+                        src={guide.image}
+                        alt={guide.title}
+                        layout="fill"
+                        objectFit="contain"
+                      />
+                    </div>
+                  </a>
+                </Link>
+              </article>
+            ))}
           </div>
-        </Link>
-      ))} */}
+        </section>
+      </div>
     </MainLayout>
   );
 };

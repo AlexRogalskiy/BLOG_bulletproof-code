@@ -3,14 +3,14 @@ import Link from "next/link";
 import { v4 } from "uuid";
 import CategoryBubble from "./CategoryBubble";
 
-const BlogCard = ({ postDetails }) => {
+const BlogCard = ({ postDetails, isPriority = false }) => {
   const { title, subTitle, excerpt, coverImage, categories } =
     postDetails.frontMatter;
 
   return (
-    <article>
+    <article className="bg-white shadow-md rounded-lg">
       <Link href={"/blog/" + postDetails.slug} passHref>
-        <a className="">
+        <a>
           <div className="relative w-full h-52">
             <Image
               src={coverImage}
@@ -19,7 +19,7 @@ const BlogCard = ({ postDetails }) => {
               objectFit="cover"
               objectPosition="center"
               className="rounded-lg shadow-lg"
-              priority
+              priority={isPriority}
             />
           </div>
 
@@ -31,11 +31,11 @@ const BlogCard = ({ postDetails }) => {
             <h2 className="font-black text-2xl">{title}</h2>
             <h3 className="font-bold text-xl">{subTitle}</h3>
             <p className="leading-5">{excerpt}</p>
-            <Link href={"/blog/" + postDetails.slug}>
-              <a className="text-blue-500">Read More</a>
-            </Link>
           </div>
         </a>
+      </Link>
+      <Link href={"/blog/" + postDetails.slug}>
+        <a className="text-blue-500 px-8 my-4">Read More</a>
       </Link>
     </article>
   );
