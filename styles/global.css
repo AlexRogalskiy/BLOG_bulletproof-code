@@ -54,3 +54,6 @@
     @apply text-blue-500 underline md:text-xl hover:text-blue-700 transition-colors;
   }
 }
+
+@layer utilities {
+}
