@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "bulletproof-guide-front-end-developer-ebook",
+    "name": "Bulletproof Guide to Becoming a PAID Front-End Developer",
+    "image": "/static/images/bp-front-end/Book_Cover.png"
+  },
+  {
+    "slug": "six-month-front-end-blueprint",
+    "name": "Six Month Front-End Blueprint",
+    "image": "/static/images/bp-front-end/Book_Cover.png"
+  },
+  {
+    "slug": "developer-study-plan",
+    "name": "Developer Study Plan TSK",
+    "image": "/static/images/bp-front-end/Book_Cover.png"
+  },
+  {
+    "slug": "welcome-to-the-newsletter",
+    "name": "Bulletproof Front-End Developer Newsletter",
+    "image": "/static/images/bp-front-end/Book_Cover.png"
+  }
+]
