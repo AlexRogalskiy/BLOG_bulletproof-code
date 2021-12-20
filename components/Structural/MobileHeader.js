@@ -2,8 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { XIcon } from "@heroicons/react/outline";
+import { CodeIcon, XIcon } from "@heroicons/react/outline";
 import { v4 } from "uuid";
+import FancyHeaderButton from "../CTA/FancyHeaderButton";
 
 const MobileHeader = ({ myBestFreeContent, moreResources }) => {
   return (
@@ -57,22 +58,18 @@ const MobileHeader = ({ myBestFreeContent, moreResources }) => {
           </div>
           <div className="py-6 px-5">
             <div className="grid grid-cols-2 gap-4">
-              <Link href="TSK">
+              <Link href="/">
                 <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricingtsk
-                </a>
-              </Link>
-              <Link href="TSK">
-                <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docstsk
+                  Start Here
                 </a>
               </Link>
 
-              <Link href="TSK">
+              <Link href="/blog/bulletproof-guide-to-becoming-a-front-end-developer">
                 <a className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Enterprisetsk
+                  Best Free Guide
                 </a>
               </Link>
+
               {moreResources.map((resource) => (
                 <Link key={v4()} href={resource.href}>
                   <a className="text-base font-medium text-gray-900 hover:text-gray-700">
@@ -82,16 +79,21 @@ const MobileHeader = ({ myBestFreeContent, moreResources }) => {
               ))}
             </div>
             <div className="mt-6">
-              <Link href="TSK">
-                <a className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-lightBlue-600 hover:bg-lightBlue-700">
-                  Sign up
-                </a>
-              </Link>
-              <p className="mt-6 text-center text-base font-medium text-gray-500">
+              <FancyHeaderButton />
+              {/* TSK: Bring this back after AUTH */}
+              {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
                 Existing customer?{" "}
                 <Link href="TSK">
                   <a className="text-lightBlue-600 hover:text-lightBlue-500">
                     Sign in
+                  </a>
+                </Link>
+              </p> */}
+              <p className="mt-6 text-center text-base font-medium text-gray-500">
+                New to Development?{" "}
+                <Link href="/">
+                  <a className="text-lightBlue-600 hover:text-lightBlue-500">
+                    Start Here
                   </a>
                 </Link>
               </p>

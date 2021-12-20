@@ -3,91 +3,73 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import {
-  ChartBarIcon,
-  CursorClickIcon,
-  DocumentReportIcon,
+  CalendarIcon,
+  AcademicCapIcon,
   MenuIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { v4 } from "uuid";
 import { classNames } from "../../utils/css.helpers";
 import MobileHeader from "./MobileHeader";
+import FancyHeaderButton from "../CTA/FancyHeaderButton";
 
 const myBestFreeContent = [
   {
-    name: "Analytics",
+    name: "6-Month Developer Roadmap",
     description:
       "Get a better understanding of where your traffic is coming from.",
-    href: "#",
-    icon: ChartBarIcon,
+    href: "/opt-in/six-month-front-end-roadmap",
+    icon: CalendarIcon,
   },
   {
-    name: "Engagement",
+    name: "Developer Study Manual",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
-    icon: CursorClickIcon,
-  },
-  {
-    name: "Security",
-    description: "Your customers' data will be safe and secure.",
-    href: "#",
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools that you're already using.",
-    href: "#",
-    icon: ViewGridIcon,
-  },
-  {
-    name: "Automations",
-    description:
-      "Build strategic funnels that will drive your customers to convert",
-    href: "#",
-    icon: RefreshIcon,
-  },
-  {
-    name: "Reports",
-    description:
-      "Get detailed reports that will help you make more informed decisions ",
-    href: "#",
-    icon: DocumentReportIcon,
+    href: "/opt-in/developer-study-manual",
+    icon: AcademicCapIcon,
   },
 ];
 const moreResources = [
   {
-    name: "Help Center",
+    name: "Blog",
     description:
-      "Get all of your questions answered in our forums or contact support.",
-    href: "#",
+      "Learn the front-end through detailed tutorials, and technical articles.",
+    href: "/blog",
   },
   {
-    name: "Guides",
-    description:
-      "Learn how to maximize our platform to get the most out of it.",
-    href: "#",
+    name: "Flash Cards",
+    description: "Study front-end terminology with interactive flash cards!",
+    href: "/glossary-cards",
   },
-  {
-    name: "Events",
-    description:
-      "See what meet-ups and other events we might be planning near you.",
-    href: "#",
-  },
-  {
-    name: "Security",
-    description: "Understand how we take your privacy seriously.",
-    href: "#",
-  },
+  // {
+  //   name: "eBooks",
+  //   description:
+  //     "Learn how to maximize our platform to get the most out of i tsk.",
+  //   href: "/e-book",
+  // },
+  // {
+  //   name: "Wall of Love",
+  //   description:
+  //     "See what meet-ups and other events we might be planning near tsk you.",
+  //   href: "/wall-of-love",
+  // },
+  // {
+  //   name: "Courses",
+  //   description:
+  //     "See what meet-ups and other events we might be planning near tsk you.",
+  //   href: "/opt-in/launch-responsive-portfolio",
+  // },
+  // {
+  //   name: "Members Only",
+  //   description: "Understand how we take your privacy tsk seriously.",
+  //   href: "/members",
+  // },
 ];
 
 const Header = () => {
   return (
     <Popover className="relative bg-white z-50">
-      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
-        <div className="flex justify-start lg:w-0 lg:flex-1">
+      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-4 lg:space-x-10">
+        <div className="flex md:hidden xl:flex justify-start lg:w-0 lg:flex-1">
           <Link href="/">
             <a>
               <span className="sr-only">Bulletproof Code</span>
@@ -95,7 +77,7 @@ const Header = () => {
                 width={48}
                 height={48}
                 src="/static/images/BP_Logo-Large.png"
-                alt="TSK"
+                alt="Bulletproof Code Logo"
               />
             </a>
           </Link>
@@ -107,6 +89,11 @@ const Header = () => {
           </Popover.Button>
         </div>
         <Popover.Group as="nav" className="hidden md:flex space-x-10">
+          <Link href="/">
+            <a className="text-base p-1 font-medium text-gray-500 hover:text-gray-900">
+              Start Here
+            </a>
+          </Link>
           <Popover className="relative">
             {({ open }) => (
               <>
@@ -116,14 +103,16 @@ const Header = () => {
                     "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightBlue-500"
                   )}
                 >
-                  <span className="">My Best Free Content</span>
-                  <ChevronDownIcon
+                  <span className="font-semibold p-1">
+                    My Best Free Content
+                  </span>
+                  {/* <ChevronDownIcon
                     className={classNames(
                       open ? "text-gray-600" : "text-gray-400",
                       "ml-2 h-5 w-5 group-hover:text-gray-500"
                     )}
                     aria-hidden="true"
-                  />
+                  /> */}
                 </Popover.Button>
 
                 <Transition
@@ -160,20 +149,20 @@ const Header = () => {
                         ))}
                       </div>
                       <div className="p-5 bg-gray-50 sm:p-8">
-                        <Link href="TSK">
+                        <Link href="/">
                           <a className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
                             <div className="flex items-center">
                               <div className="text-base font-medium text-gray-900">
                                 Bulletproof Guide to Becoming a PAID Front-End
                                 Developer
                               </div>
-                              <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-lightBlue-100 text-lightBlue-800">
-                                New tsk
+                              <span className="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-red-100 text-red-800">
+                                New!
                               </span>
                             </div>
                             <p className="mt-1 text-sm text-gray-500">
-                              Empower your entire team with even more advanced
-                              tools. tsk
+                              How to Change Careers & Land Your First Job as a
+                              Front-End Developer.
                             </p>
                           </a>
                         </Link>
@@ -185,17 +174,6 @@ const Header = () => {
             )}
           </Popover>
 
-          <Link href="TSK">
-            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Pricingtsk
-            </a>
-          </Link>
-          <Link href="TSK">
-            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Docstsk
-            </a>
-          </Link>
-
           <Popover className="relative">
             {({ open }) => (
               <>
@@ -205,7 +183,10 @@ const Header = () => {
                     "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lightBlue-500"
                   )}
                 >
-                  <span className="">More Resources</span>
+                  <span className="p-1">
+                    More{" "}
+                    <span className="md:hidden xl:inline-block">Resources</span>
+                  </span>
                   <ChevronDownIcon
                     className={classNames(
                       open ? "text-gray-600" : "text-gray-400",
@@ -248,17 +229,14 @@ const Header = () => {
           </Popover>
         </Popover.Group>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <Link href="TSK">
+          {/* TSK: Turn into a  button */}
+          {/* <Link href="TSK">
             <a className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
               Sign in
             </a>
-          </Link>
+          </Link> */}
 
-          <Link href="TSK">
-            <a className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-lightBlue-600 hover:bg-lightBlue-700">
-              Sign up
-            </a>
-          </Link>
+          <FancyHeaderButton />
         </div>
       </div>
 
