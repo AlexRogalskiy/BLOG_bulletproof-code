@@ -4,12 +4,25 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
 import MainLayout from "../../layouts/MainLayout";
+import BlogCard from "../../components/Blog/BlogCard";
+import { v4 } from "uuid";
 
 const BlogPosts = ({ posts }) => {
   console.log("posts:", posts);
   return (
     <MainLayout>
-      {posts.map((post, index) => (
+      <div className="flex justify-between">
+        {/* LEFT: ARTICLES & CTA's */}
+        <section className="w-8/12 bg-white shadow-md rounded-lg">
+          {posts.slice(0, 1).map((post) => (
+            <BlogCard key={v4()} postDetails={post} />
+          ))}
+        </section>
+
+        {/* RIGHT: BEST EBOOKS */}
+        <section className="bg-white shadow-lg w-3/12"></section>
+      </div>
+      {/* {posts.map((post, index) => (
         <Link href={"/blog/" + post.slug} passHref key={index}>
           <div className="card mb-3 pointer" style={{ maxWidth: "540px" }}>
             <div className="row g-0">
@@ -37,7 +50,7 @@ const BlogPosts = ({ posts }) => {
             </div>
           </div>
         </Link>
-      ))}
+      ))} */}
     </MainLayout>
   );
 };

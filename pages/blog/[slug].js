@@ -12,6 +12,7 @@ import TestForm from "../../components/CTA/TestForm";
 import BlogPostLayout from "../../layouts/BlogPostLayout";
 import { useRouter } from "next/router";
 import Error from "next/error";
+import CategoryBubble from "../../components/Blog/CategoryBubble";
 
 const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
   const router = useRouter();
@@ -35,12 +36,7 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
             {subTitle}
           </h2>
           {categories.map((category) => (
-            <div
-              key={v4()}
-              className={`bg-${category.color}-200 rounded-3xl py-2 px-4 font-bold text-xs inline-block mt-4 mr-2`}
-            >
-              {category.name}
-            </div>
+            <CategoryBubble key={v4()} category={category} />
           ))}
 
           <div className="relative h-64 md:h-96 w-full my-5">
