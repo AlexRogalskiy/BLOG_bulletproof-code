@@ -7,7 +7,7 @@ const SqueezeLayout = ({ children, offer }) => {
       description={offer.description}
       image={`https://bulletproof-code.com${offer.image}`}
     >
-      <main>{children}</main>
+      <main className="max-w-7xl mx-auto px-6 mt-12">{children}</main>
     </Container>
   );
 };

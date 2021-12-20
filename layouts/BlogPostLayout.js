@@ -12,7 +12,7 @@ const BlogPostLayout = ({ children, postDetails }) => {
       type="article"
     >
       <Header />
-      <main className="w-full max-w-4xl mx-auto mt-12 overflow-hidden px-6 md:px-0">
+      <main className="w-full max-w-4xl mx-auto mt-12 overflow-hidden px-6">
         {children}
       </main>
       <Footer />

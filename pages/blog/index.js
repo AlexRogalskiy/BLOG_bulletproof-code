@@ -27,13 +27,12 @@ const myFavoriteGuides = [
 ];
 
 const BlogPosts = ({ posts }) => {
-  console.log("posts:", posts);
   return (
     <MainLayout>
-      <div className="flex justify-between">
+      <div className="flex flex-col lg:flex-row justify-between">
         {/* LEFT: ARTICLES & CTA's */}
         {/* ARTICLE #1 */}
-        <section className="w-8/12 space-y-12">
+        <section className="w-full lg:w-8/12 space-y-12">
           {posts.slice(0, 1).map((post) => (
             <BlogCard key={v4()} postDetails={post} isPriority />
           ))}
@@ -56,14 +55,17 @@ const BlogPosts = ({ posts }) => {
         </section>
 
         {/* RIGHT: BEST EBOOKS */}
-        <section className="bg-white shadow-lg w-3/12 h-full">
-          <h2 className="">Read my Favorite Bulletproof Guides:</h2>
-          <div className="space-y-12 my-12">
+        <section className="bg-white shadow-lg w-full lg:w-3/12 h-full mt-12 lg:mt-0 text-center ">
+          <h2 className="text-xl font-bold mt-6">
+            Read my Favorite Bulletproof Guides!
+          </h2>
+          <p className="mt-2 text-gray-500">P.S. They are all FREE!</p>
+          <div className="space-y-12 mt-8 mb-12">
             {myFavoriteGuides.map((guide) => (
-              <article key={v4()}>
+              <article key={v4()} className="hover:scale-105 transition-all">
                 <Link href={"/blog/" + guide.slug} passHref>
                   <a>
-                    <div className="relative w-full h-64">
+                    <div className="relative w-full h-96 lg:h-64">
                       <Image
                         src={guide.image}
                         alt={guide.title}

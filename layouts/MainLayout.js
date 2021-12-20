@@ -7,7 +7,7 @@ const MainLayout = ({ children }) => {
     <Container>
       <Header />
       {/* TSK: You can put the main styles (for all layouts) in the global.css file */}
-      <main className="max-w-7xl min-h-screen mx-auto px-6 md:px-0 mt-12">
+      <main className="max-w-7xl min-h-screen mx-auto px-6 mt-6 lg:mt-12">
         {children}
       </main>
       <Footer />

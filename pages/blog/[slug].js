@@ -17,7 +17,6 @@ import CategoryBubble from "../../components/Blog/CategoryBubble";
 const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
   const router = useRouter();
   const { title, subTitle, coverImage, categories } = frontMatter;
-  console.log("frontMatter:", frontMatter);
 
   if (!router.isFallback && !frontMatter?.title) {
     return <Error statusCode={404} />;

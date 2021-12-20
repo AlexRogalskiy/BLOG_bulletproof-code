@@ -50,3 +50,4 @@
 - Add Font Select Colors & Hover States
 - Add Accessibility
 - Think about cutting the blog post guides short and have a CTA at the bottom
+- Pagination on Blog Page
