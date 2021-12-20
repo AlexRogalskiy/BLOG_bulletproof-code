@@ -44,10 +44,11 @@
 
 ### Optimizations
 
+- Solve "TSK" Messages
 - Add Preact
 - Add Motion Animations
 - Add Robots.txt
-- Add Font Select Colors & Hover States
+- Add Font Select Colors & Hover/Focus States
 - Add Accessibility
 - Think about cutting the blog post guides short and have a CTA at the bottom
 - Pagination on Blog Page
