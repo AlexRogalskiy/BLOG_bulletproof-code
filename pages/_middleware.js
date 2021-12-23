@@ -4,7 +4,7 @@ export function middleware(req, ev) {
   const ContentSecurityPolicy = `
     default-src 'self';
     script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.ck.page *.convertkit.com;
-    child-src *.youtube.com *.google.com *.ck.page *.covertkit.com;
+    child-src *.youtube.com *.google.com *.ck.page *.covertkit.com *.convertki;
     style-src 'self' 'unsafe-inline' *.googleapis.com;
     img-src * blob: data:;
     media-src 'none';
