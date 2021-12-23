@@ -149,7 +149,7 @@ const Header = () => {
                         ))}
                       </div>
                       <div className="p-5 bg-gray-50 sm:p-8">
-                        <Link href="/">
+                        <Link href="/blog/bulletproof-guide-to-becoming-a-paid-front-end-developer">
                           <a className="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
                             <div className="flex items-center">
                               <div className="text-base font-medium text-gray-900">

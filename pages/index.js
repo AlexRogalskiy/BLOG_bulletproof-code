@@ -1,9 +1,19 @@
+import TwoColumnEBook from "../components/Marketing/TwoColumnEBook";
+
+const BPFrontEndGuide = {
+  title: "Bulletproof Guide to Becoming a PAID Front-End Developer",
+  image: "/static/images/bp-front-end/Book_Cover.png",
+  wordCount: 16511,
+  optInLink: "",
+  mainFeatures: [],
+  ctaCopy: "Download my Free Guide!",
+};
+
 const HomePage = (props) => {
   return (
-    <h1>
-      THIS PAGE WILL BE AN OPT-IN FOR THE BULLETPROOF GUIDE TO FRONT_END
-      DEVELOPMENT
-    </h1>
+    <section>
+      <TwoColumnEBook eBookDetails={BPFrontEndGuide} />
+    </section>
   );
 };
 
