@@ -44,7 +44,7 @@ const ThankYouTemplate = ({ optInItem }) => {
           <hr />
           <p className="mt-12">
             I am happy to have you here and hope you enjoy your{" "}
-            <span className="font-bold">100+ page value-packed guide</span>.
+            <span className="font-bold">116+ page value-packed guide</span>.
             Talk with you soon!
           </p>
         </div>
