@@ -7,20 +7,22 @@ const TwoColumnEBook = ({ eBookDetails }) => {
   const { title, image, ctaCopy, wordCount, mainFeatures, optInLink } =
     eBookDetails;
   return (
-    <article className="max-w-6xl mx-auto min-h-screen">
+    <article className="px-2 lg:px-0 max-w-6xl mx-auto min-h-screen">
       {/*  Top Section - Title & SubTitle */}
-      <section className="text-center mt-12 mb-20">
-        <h1 className="text-3xl font-bold text-red-700 mb-14">{title}</h1>
-        <h2 className=" text-red-800 font-medium italic text-2xl">
+      <section className="text-center mt-4 mb-10 xl:mt-12 xl:mb-20">
+        <h1 className="text-2xl lg:text-3xl font-bold text-red-700 mb-6 lg:mb-14">
+          {title}
+        </h1>
+        <h2 className=" text-red-800 font-semibold lg:font-medium italic text-xl lg:text-2xl">
           No BS. No false promises. Just a step-by-step system that actually
           works.
         </h2>
       </section>
 
-      <section className="flex justify-between">
+      <section className="flex flex-col lg:flex-row justify-between">
         {/* Left Section - Main Features */}
-        <section className="w-6/12">
-          <h3 className="text-2xl text-gray-600">
+        <section className="w-full lg:w-6/12">
+          <h3 className="text-xl lg:text-2xl text-gray-600">
             Download my{" "}
             <span className="font-bold text-gray-800">
               free {wordCount}-word Bulletproof Guide to Becoming a PAID
@@ -41,20 +43,21 @@ const TwoColumnEBook = ({ eBookDetails }) => {
               </li>
             ))}
           </ul>
-          <ArrowRightIcon className="h-28 w-28 mx-auto text-gray-800" />
+          <ArrowRightIcon className="hidden lg:h-28 lg:w-28 mx-auto text-gray-800" />
         </section>
 
         {/* Right Section - Image and CTA */}
-        <section className="w-5/12">
-          <div className="relative h-[475px] w-[475px] mx-auto">
+        <section className="w-full lg:w-5/12">
+          <div className="relative h-72 w-72 lg:h-80 lg:w-80 xl:h-[475px] xl:w-[475px] mx-auto">
             <Image
               src={image}
               alt={title + " Book Cover"}
               layout="fill"
               objectFit="contain"
+              priority
             />
           </div>
-          <button className="bg-red-700 rounded mt-16 w-full py-4 px-8 text-white font-bold text-2xl uppercase hover:bg-red-800 transition-colors">
+          <button className="bg-red-700 rounded mt-16 w-full py-4 px-4 lg:px-8 text-white font-bold text-xl lg:text-2xl uppercase hover:bg-red-800 transition-colors">
             {ctaCopy}
           </button>
         </section>
