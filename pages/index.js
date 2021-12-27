@@ -1,7 +1,9 @@
 import TwoColumnEBook from "../components/Marketing/TwoColumnEBook";
+import SqueezeLayout from "../layouts/SqueezeLayout";
 
 const BPFrontEndGuide = {
-  title: "Bulletproof Guide to Becoming a PAID Front-End Developer",
+  title:
+    "Let me show you what it REALLY takes to land your first developer job in 2022.",
   image: "/static/images/bp-front-end/Book_Cover.png",
   wordCount: 16511,
   optInLink: "/opt-in/bulletproof-guide-to-becoming-a-paid-front-end-developer",
@@ -9,17 +11,17 @@ const BPFrontEndGuide = {
     {
       feature: "Strategically integrate action points in your business",
       description:
-        "So we can hit the ground running, we will be dynamically investing every ballpark figure in our space.",
+        "so we can hit the ground running, we will be dynamically investing every ballpark figure in our space.",
     },
     {
       feature: "Virtually grow capabilities in your business",
       description:
-        "Learn seamless best practices are becoming unparalleled prince2 practitioner experts",
+        "learn seamless best practices are becoming unparalleled prince2 practitioner experts",
     },
     {
       feature: "Intelligently reuse step-changes in your business",
       description:
-        "Touching base about engineering emerging markets will make us leaders in the holistic visibility industry",
+        "touching base about engineering emerging markets will make us leaders in the holistic visibility industry",
     },
   ],
   ctaCopy: "Download my Free Guide!",
@@ -27,9 +29,9 @@ const BPFrontEndGuide = {
 
 const HomePage = (props) => {
   return (
-    <section>
+    <SqueezeLayout offer={BPFrontEndGuide}>
       <TwoColumnEBook eBookDetails={BPFrontEndGuide} />
-    </section>
+    </SqueezeLayout>
   );
 };
 
