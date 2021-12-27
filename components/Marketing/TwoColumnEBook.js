@@ -42,7 +42,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
               </li>
             ))}
           </ul>
-          <ArrowRightIcon className="hidden xl:block h-28 w-28 mx-auto text-gray-800" />
+          <ArrowRightIcon className="hidden xl:block h-24 w-24 mx-auto text-gray-800" />
         </section>
 
         {/* Right Section - Image and CTA */}
