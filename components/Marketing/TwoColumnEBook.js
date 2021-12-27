@@ -4,8 +4,7 @@ import Image from "next/image";
 import { v4 } from "uuid";
 
 const TwoColumnEBook = ({ eBookDetails }) => {
-  const { title, image, ctaCopy, wordCount, mainFeatures, optInLink } =
-    eBookDetails;
+  const { title, image, ctaCopy, wordCount, mainFeatures } = eBookDetails;
   return (
     <article className="px-2 lg:px-0 max-w-6xl mx-auto min-h-screen">
       {/*  Top Section - Title & SubTitle */}
@@ -30,11 +29,11 @@ const TwoColumnEBook = ({ eBookDetails }) => {
             </span>{" "}
             and I&apos;ll show you:
           </h3>
-          <ul className="my-10 space-y-8 mb-16">
+          <ul className="my-10 space-y-8 mb-10">
             {mainFeatures.map((feature) => (
               <li className="flex justify-between" key={v4()}>
-                <CheckCircleIcon className="h-14 w-14 text-green-500 mr-3 align-top self-start justify-self-start" />
-                <p className="leading-relaxed text-gray-700 font-light text-lg">
+                <CheckCircleIcon className="h-6 w-1/12 text-green-500 mr-2 align-top self-start justify-self-start" />
+                <p className="leading-relaxed text-gray-700 font-light text-lg w-11/12">
                   <span className="font-bold text-gray-800">
                     {feature.feature}
                   </span>{" "}
@@ -43,7 +42,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
               </li>
             ))}
           </ul>
-          <ArrowRightIcon className="hidden lg:h-28 lg:w-28 mx-auto text-gray-800" />
+          <ArrowRightIcon className="hidden xl:block h-28 w-28 mx-auto text-gray-800" />
         </section>
 
         {/* Right Section - Image and CTA */}

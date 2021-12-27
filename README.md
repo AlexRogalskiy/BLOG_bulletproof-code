@@ -2,10 +2,8 @@
 
 ## MVP
 
-1. **CODE** - Opt-in Dynamic Page
-2. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
-3. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
-4. **HOST**: Vercel Domain Service
+1. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
+2. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
 
 ---
 
@@ -15,6 +13,8 @@
 
 ### Pages
 
+- Dynamic OptIn Pages (Extract the data from home page)
+- Flash Cards
 - Wall of Love
 - eBooks Page
 - Members Only Page
@@ -54,3 +54,4 @@
 - Add Accessibility
 - Think about cutting the blog post guides short and have a CTA at the bottom
 - Pagination on Blog Page
+- A/B Test the Opt-in Pages

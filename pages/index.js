@@ -5,23 +5,25 @@ const BPFrontEndGuide = {
   title:
     "Let me show you what it REALLY takes to land your first developer job in 2022.",
   image: "/static/images/bp-front-end/Book_Cover.png",
-  wordCount: 16511,
+  wordCount: "16,511",
   optInLink: "/opt-in/bulletproof-guide-to-becoming-a-paid-front-end-developer",
   mainFeatures: [
     {
-      feature: "Strategically integrate action points in your business",
+      feature: "A Bulletproof 6 Month Plan to Learning Front-End Development",
       description:
-        "so we can hit the ground running, we will be dynamically investing every ballpark figure in our space.",
+        "from finding what to focus on, to growing your skills, to building your portfolio and acing the interview",
     },
     {
-      feature: "Virtually grow capabilities in your business",
+      feature:
+        "What My Most Successful Students Do That Puts Them Ahead of the Rest",
       description:
-        "learn seamless best practices are becoming unparalleled prince2 practitioner experts",
+        "no sugar coating. I'll show you exactly what you need to do, and how to stand above the rest of the competition and excel as a programmer",
     },
     {
-      feature: "Intelligently reuse step-changes in your business",
+      feature:
+        "An Easy-to-Implement Study Strategy Proven to Enhance Learning, Memory & Recall",
       description:
-        "touching base about engineering emerging markets will make us leaders in the holistic visibility industry",
+        "nobody talks about this, and yet, it is a key component for successfully learning to code and continue your journey as a excellent front-end developer",
     },
   ],
   ctaCopy: "Download my Free Guide!",
