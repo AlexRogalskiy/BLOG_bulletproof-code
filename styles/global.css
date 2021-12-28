@@ -27,13 +27,23 @@
   }
 
   .blog h2 {
-    @apply text-2xl md:text-4xl font-bold my-4;
+    @apply text-2xl md:text-4xl font-bold mb-6 mt-36;
   }
 
   .blog h3 {
+    @apply text-xl md:text-3xl font-semibold mt-24;
   }
 
   .blog h4 {
+    @apply text-xl mt-10 mb-2 underline;
+  }
+
+  .blog h5 {
+    @apply mt-44 text-5xl text-lightBlue-700 font-serif;
+  }
+
+  .blog h6 {
+    @apply mt-24 mb-44 text-6xl font-black font-serif text-lightBlue-900;
   }
 
   .blog p {
@@ -43,11 +53,24 @@
   .blog span {
   }
 
+  .blog ul {
+    @apply list-disc mx-8 space-y-2 mb-6;
+  }
+
+  .blog ol li em {
+    @apply text-xl mt-6 font-medium text-lightBlue-800 block;
+  }
+
   .blog hr {
     border: 0;
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 36px 0;
+  }
+
+  .blog hr ~ hr {
+    @apply mt-36;
   }
 
   .blog a {

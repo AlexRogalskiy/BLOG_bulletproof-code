@@ -14,6 +14,9 @@ module.exports = {
         lightBlue: colors.lightBlue,
         blueGray: colors.blueGray,
       },
+      listStyleType: {
+        roman: "upper-roman",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],

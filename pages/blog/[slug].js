@@ -13,6 +13,7 @@ import BlogPostLayout from "../../layouts/BlogPostLayout";
 import { useRouter } from "next/router";
 import Error from "next/error";
 import CategoryBubble from "../../components/Blog/CategoryBubble";
+import TableOfContents from "../../components/Blog/TableOfContents";
 
 const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
   const router = useRouter();
@@ -52,7 +53,7 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
           <section className="max-w-prose mx-auto blog">
             <MDXRemote
               {...mdxSource}
-              components={{ SyntaxHighlighter, TestForm }}
+              components={{ SyntaxHighlighter, TestForm, TableOfContents }}
               lazy={true}
             />
           </section>
