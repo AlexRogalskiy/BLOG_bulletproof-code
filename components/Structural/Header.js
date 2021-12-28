@@ -68,7 +68,7 @@ const moreResources = [
 const Header = () => {
   return (
     <Popover className="sticky top-0 bg-white z-50">
-      <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-4 lg:space-x-10">
+      <div className="flex justify-between items-center px-4 py-4 sm:px-6 md:justify-start md:space-x-4 lg:space-x-10">
         <div className="flex md:hidden xl:flex justify-start lg:w-0 lg:flex-1">
           <Link href="/">
             <a>
