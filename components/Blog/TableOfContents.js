@@ -3,32 +3,83 @@ import { v4 } from "uuid";
 
 const TableOfContents = ({ intro, partOne, partTwo, partThree, outro }) => {
   return (
-    <section className="">
-      {/* Intro */}
-      <p className="">Intro</p>
-      <ul className="flex flex-col list-roman">
-        {intro.map((section) => (
-          <Link href={`#${section.split(" ").join("-")}`} key={v4()}>
-            <a className="">{section}</a>
-          </Link>
-        ))}
-      </ul>
+    <section className="mb-24">
+      <h2 className="">Table of Contents</h2>
 
-      {/* partOne */}
-      <p>{partOne.name}</p>
-      <ul className="flex flex-col list-roman">
-        {partOne.chapters.map((chapter) => (
-          <Link href={`#${chapter.split(" ").join("-")}`} key={v4()}>
-            <a className="">{chapter}</a>
-          </Link>
-        ))}
-      </ul>
+      <article className="bg-yellow-100 p-8 rounded-2xl space-y-12 shadow-lg">
+        {/* Intro */}
+        <section className="toc-section">
+          <h3>Intro</h3>
+          <ul>
+            {intro.map((section) => (
+              <li key={v4()}>
+                <Link href={`#${section.split(" ").join("-")}`}>
+                  <a>{section}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
 
-      {/* partTwo */}
+        {/* partOne */}
+        <section className="toc-section">
+          <h3>{partOne.name}</h3>
+          <p>{partOne.description}</p>
+          <ul>
+            {partOne.chapters.map((chapter) => (
+              <li key={v4()}>
+                <Link href={`#${chapter.split(" ").join("-")}`}>
+                  <a>{chapter}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
 
-      {/* partThree */}
+        {/* partTwo */}
+        <section className="toc-section">
+          <h3>{partTwo.name}</h3>
+          <p>{partOne.description}</p>
+          <ul>
+            {partTwo.chapters.map((chapter) => (
+              <li key={v4()}>
+                <Link href={`#${chapter.split(" ").join("-")}`}>
+                  <a>{chapter}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
 
-      {/* Outro */}
+        {/* partThree */}
+        <section className="toc-section">
+          <h3>{partThree.name}</h3>
+          <p>{partOne.description}</p>
+          <ul>
+            {partThree.chapters.map((chapter) => (
+              <li key={v4()}>
+                <Link href={`#${chapter.split(" ").join("-")}`}>
+                  <a>{chapter}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Outro */}
+        <section className="toc-section">
+          <h3>Outro</h3>
+          <ul>
+            {outro.map((section) => (
+              <li key={v4()}>
+                <Link href={`#${section.split(" ").join("-")}`}>
+                  <a>{section}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </article>
     </section>
   );
 };

@@ -76,6 +76,22 @@
   .blog a {
     @apply text-blue-500 underline md:text-xl hover:text-blue-700 transition-colors;
   }
+
+  .toc-section {
+    @apply mb-12;
+  }
+  .toc-section h3 {
+    @apply font-bold text-2xl my-4 uppercase text-gray-900;
+  }
+  .toc-section p {
+    @apply text-xl mb-2 text-gray-600;
+  }
+  .toc-section ul {
+    @apply space-y-4 flex flex-col list-roman;
+  }
+  .toc-section a {
+    @apply font-medium text-xl tracking-wider;
+  }
 }
 
 @layer utilities {
