@@ -3,7 +3,6 @@
 ## MVP
 
 1. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
-2. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
 
 ---
 
@@ -54,3 +53,5 @@
 - Think about cutting the blog post guides short and have a CTA at the bottom
 - Pagination on Blog Page
 - A/B Test the Opt-in Pages
+- Remove Convert Kit from Footer & Emails & Forms
+- Create a "Blog Post Title" Component

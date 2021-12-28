@@ -11,11 +11,11 @@ import { ChevronDownIcon } from "@heroicons/react/solid";
 import { v4 } from "uuid";
 import { classNames } from "../../utils/css.helpers";
 import MobileHeader from "./MobileHeader";
-import FancyHeaderButton from "../CTA/FancyHeaderButton";
+import RainbowButton from "../CTA/RainbowButton";
 
 const myBestFreeContent = [
   {
-    name: "6-Month Developer Roadmap",
+    name: "6-Month Front-End Roadmap",
     description:
       "Get a better understanding of where your traffic is coming from.",
     href: "/opt-in/six-month-front-end-roadmap",
@@ -67,7 +67,7 @@ const moreResources = [
 
 const Header = () => {
   return (
-    <Popover className="relative bg-white z-50">
+    <Popover className="sticky top-0 bg-white z-50">
       <div className="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-4 lg:space-x-10">
         <div className="flex md:hidden xl:flex justify-start lg:w-0 lg:flex-1">
           <Link href="/">
@@ -236,7 +236,7 @@ const Header = () => {
             </a>
           </Link> */}
 
-          <FancyHeaderButton />
+          <RainbowButton text="Bulletproof Front-End eBook" extra="(FREE)" />
         </div>
       </div>
 

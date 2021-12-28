@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { CodeIcon, XIcon } from "@heroicons/react/outline";
+import { XIcon } from "@heroicons/react/outline";
 import { v4 } from "uuid";
-import FancyHeaderButton from "../CTA/FancyHeaderButton";
+import RainbowButton from "../CTA/RainbowButton";
 
 const MobileHeader = ({ myBestFreeContent, moreResources }) => {
   return (
@@ -79,7 +79,7 @@ const MobileHeader = ({ myBestFreeContent, moreResources }) => {
               ))}
             </div>
             <div className="mt-6">
-              <FancyHeaderButton />
+              <RainbowButton text="Bulletproof Front-End eBook (FREE)" />
               {/* TSK: Bring this back after AUTH */}
               {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
                 Existing customer?{" "}
