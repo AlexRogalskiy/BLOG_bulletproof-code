@@ -2,6 +2,8 @@
   {
     "slug": "bp-front-end-ebook",
     "type": "eBook",
+    "name": "Bulletproof Guide to Becoming a PAID Front-End Developer eBook",
+    "shortName": "116+ page value-packed guide",
     "title": "Let me show you what it REALLY takes to land your first developer job in 2022.",
     "subTitle": "No BS. No false promises. Just a step-by-step system that actually works.",
     "image": "/static/images/bp-front-end/Book_Cover.png",
@@ -25,6 +27,8 @@
   {
     "slug": "bp-front-end-extras",
     "type": "bonus",
+    "name": "Bulletproof Guide to Becoming a PAID Front-End Developer Extras",
+    "shortName": "TSK",
     "title": "Bulletproof Front-End Developer Guide Downloadable Extras",
     "subTitle": "No BS. No false promises. Just a step-by-step system that actually TSK.",
     "image": "/static/images/bp-front-end/Book_Cover.png",
@@ -33,6 +37,7 @@
   {
     "slug": "welcome-to-the-newsletter",
     "type": "newsletter",
+    "name": "Bulletproof Front-End Newsletter",
     "title": "Bulletproof Front-End Developer Newsletter",
     "subTitle": "TSK",
     "image": "/static/images/bp-front-end/Book_Cover.png",

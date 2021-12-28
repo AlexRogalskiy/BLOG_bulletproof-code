@@ -1,11 +1,8 @@
 # Bulletproof Blog
 
-/opt-in/bp-front-end-extras
-/opt-in/bp-front-end-ebook
-
 ## MVP
 
-1. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists, and Download Your Free 6-Month Plan. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
+1. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
 2. **EDIT** - The eBook to have images, checklist links, spaces between chapters, and styling!
 
 ---
@@ -16,7 +13,6 @@
 
 ### Pages
 
-- Dynamic OptIn Pages (Extract the data from home page)
 - Flash Cards
 - Wall of Love
 - eBooks Page

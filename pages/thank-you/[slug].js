@@ -16,7 +16,7 @@ const ThankYouTemplate = ({ optInItem }) => {
         <div className="relative w-96 h-96 mx-auto my-12">
           <Image
             src={optInItem.image}
-            alt={optInItem.name}
+            alt={optInItem.title}
             layout="fill"
             objectFit="contain"
             priority
@@ -27,8 +27,8 @@ const ThankYouTemplate = ({ optInItem }) => {
           <p className="text-axl">
             Check your inbox for the confirmation email with the title "
             <span className="font-bold">
-              Download Your Bulletproof Guide to Becoming a PAID Front-End
-              Developer!
+              {optInItem.type !== "newsletter" && "Download Your"}{" "}
+              {optInItem.name}!
             </span>
             ".
           </p>
@@ -44,8 +44,8 @@ const ThankYouTemplate = ({ optInItem }) => {
           <hr />
           <p className="mt-12">
             I am happy to have you here and hope you enjoy your{" "}
-            <span className="font-bold">116+ page value-packed guide</span>.
-            Talk with you soon!
+            <span className="font-bold">{optInItem.shortName}</span>. Talk with
+            you soon!
           </p>
         </div>
       </section>
