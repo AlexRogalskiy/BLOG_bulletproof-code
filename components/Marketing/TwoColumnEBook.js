@@ -47,7 +47,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
 
         {/* Right Section - Image and CTA */}
         <section className="w-full lg:w-5/12">
-          <div className="relative h-72 w-72 lg:h-80 lg:w-80 xl:h-[475px] xl:w-[475px] mx-auto">
+          <div className="relative h-72 w-72 lg:h-80 lg:w-80 xl:h-[425px] xl:w-[425px] mx-auto">
             <Image
               src={image}
               alt={title + " Book Cover"}
