@@ -9,7 +9,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
     <article className="px-2 lg:px-0 max-w-6xl mx-auto min-h-screen">
       {/*  Top Section - Title & SubTitle */}
       <section className="text-center mt-4 mb-10 xl:mt-12 xl:mb-20">
-        <h1 className="text-2xl lg:text-3xl font-bold text-red-700 mb-6 lg:mb-14">
+        <h1 className="text-2xl lg:text-3xl font-bold text-red-700 mb-6 lg:mb-12 xl:mb-14">
           {title}
         </h1>
         <h2 className=" text-red-800 font-semibold lg:font-medium italic text-xl lg:text-2xl">
