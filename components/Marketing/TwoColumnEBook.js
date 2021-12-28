@@ -4,7 +4,7 @@ import Image from "next/image";
 import { v4 } from "uuid";
 
 const TwoColumnEBook = ({ eBookDetails }) => {
-  const { title, image, ctaCopy, wordCount, mainFeatures } = eBookDetails;
+  const { title, subTitle, image, cta, wordCount, mainFeatures } = eBookDetails;
   return (
     <article className="px-2 lg:px-0 max-w-6xl mx-auto min-h-screen">
       {/*  Top Section - Title & SubTitle */}
@@ -13,8 +13,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
           {title}
         </h1>
         <h2 className=" text-red-800 font-semibold lg:font-medium italic text-xl lg:text-2xl">
-          No BS. No false promises. Just a step-by-step system that actually
-          works.
+          {subTitle}
         </h2>
       </section>
 
@@ -57,7 +56,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
             />
           </div>
           <button className="bg-red-700 rounded mt-16 w-full py-4 px-4 lg:px-8 text-white font-bold text-xl lg:text-2xl uppercase hover:bg-red-800 transition-colors">
-            {ctaCopy}
+            {cta}
           </button>
         </section>
       </section>

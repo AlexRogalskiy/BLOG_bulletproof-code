@@ -1,22 +1,41 @@
 [
   {
-    "slug": "bulletproof-guide-front-end-developer-ebook",
-    "name": "Bulletproof Guide to Becoming a PAID Front-End Developer",
-    "image": "/static/images/bp-front-end/Book_Cover.png"
+    "slug": "bp-front-end-ebook",
+    "type": "eBook",
+    "title": "Let me show you what it REALLY takes to land your first developer job in 2022.",
+    "subTitle": "No BS. No false promises. Just a step-by-step system that actually works.",
+    "image": "/static/images/bp-front-end/Book_Cover.png",
+    "cta": "Download my Free Guide!",
+    "wordCount": "16,411",
+    "mainFeatures": [
+      {
+        "feature": "A Bulletproof 6 Month Plan to Learning Front-End Development",
+        "description": "from finding what to focus on, to growing your skills, to building your portfolio and acing the interview"
+      },
+      {
+        "feature": "What My Most Successful Students Do That Puts Them Ahead of the Rest",
+        "description": "no sugar coating. I'll show you exactly what you need to do, and how to stand above the rest of the competition and excel as a programmer"
+      },
+      {
+        "feature": "An Easy-to-Implement Study Strategy Proven to Enhance Learning, Memory & Recall",
+        "description": "nobody talks about this, and yet, it is a key component for successfully learning to code and continue your journey as a excellent front-end developer"
+      }
+    ]
   },
   {
-    "slug": "six-month-front-end-blueprint",
-    "name": "Six Month Front-End Blueprint",
-    "image": "/static/images/bp-front-end/Book_Cover.png"
-  },
-  {
-    "slug": "developer-study-plan",
-    "name": "Developer Study Plan TSK",
-    "image": "/static/images/bp-front-end/Book_Cover.png"
+    "slug": "bp-front-end-extras",
+    "type": "bonus",
+    "title": "Bulletproof Front-End Developer Guide Downloadable Extras",
+    "subTitle": "No BS. No false promises. Just a step-by-step system that actually TSK.",
+    "image": "/static/images/bp-front-end/Book_Cover.png",
+    "cta": "Download my Free Checklists & PDF's!"
   },
   {
     "slug": "welcome-to-the-newsletter",
-    "name": "Bulletproof Front-End Developer Newsletter",
-    "image": "/static/images/bp-front-end/Book_Cover.png"
+    "type": "newsletter",
+    "title": "Bulletproof Front-End Developer Newsletter",
+    "subTitle": "TSK",
+    "image": "/static/images/bp-front-end/Book_Cover.png",
+    "cta": "TSK"
   }
 ]
