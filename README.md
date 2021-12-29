@@ -14,24 +14,18 @@
 
 - Flash Cards
 - Wall of Love
-- eBooks Page
-- Members Only Page
+- Members Only Page?
 - Privacy Policy
 - Terms & Conditions
 - About
 - Contact
 
-### Components
-
-- Course Launch Opt-in button (in Header)
-
 ### Features
 
 - Add NextAuth
+- Add comments
 - Change React Syntax Highlighter Styles
 - Jump to Section
-- Add comments
-- Style Scrollbar
 - Download Sticky Opt-In on Blog Post Page
 - Announcment Banner
 - Add Google Analytics
