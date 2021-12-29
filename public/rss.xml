@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Bulletproof Code Blog]]></title>
+        <description><![CDATA[Front-end developer tsk]]></description>
+        <link>https://bulletproof-code.com</link>
+        <image>
+            <url>https://bulletproof-code.com/static/images/BP_Logo-Large.png</url>
+            <title>Bulletproof Code Blog</title>
+            <link>https://bulletproof-code.com</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 29 Dec 2021 02:13:46 GMT</lastBuildDate>
+        <atom:link href="https://bulletproof-code.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <managingEditor><![CDATA[William Wilder]]></managingEditor>
+        <webMaster><![CDATA[William Wilder]]></webMaster>
+        <category><![CDATA[JavaScript]]></category>
+        <category><![CDATA[Front-End Development]]></category>
+        <category><![CDATA[Coding Guides]]></category>
+        <category><![CDATA[Programming Tutorials]]></category>
+        <item>
+            <title><![CDATA[Bulletproof Guide to Becoming a PAID Front-End Developer (No Experience Required!)]]></title>
+            <description><![CDATA[Want to get a job as a Front-End Developer but don't know where to start?
+This guide provides you with a step-by-step plan to get your first Front End Developer job. You don't have to be a genius or have been coding since you were six, or graduated from MIT with a Computer Science Degree. This guide is for anyone looking to change careers into tech with no experience required.]]></description>
+            <link>https://bulletproof-code.com/blog/bulletproof-guide-to-becoming-a-paid-front-end-developer</link>
+            <guid isPermaLink="true">https://bulletproof-code.com/blog/bulletproof-guide-to-becoming-a-paid-front-end-developer</guid>
+            <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

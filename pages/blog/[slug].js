@@ -66,7 +66,6 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
 export default BlogPostTemplate;
 
 export async function getStaticPaths() {
-  // TSK: Abstract
   const files = fs.readdirSync(path.join("_posts"));
   const paths = files.map((filename) => ({
     params: {

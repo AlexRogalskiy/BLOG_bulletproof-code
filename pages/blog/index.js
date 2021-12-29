@@ -1,11 +1,9 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import MainLayout from "../../layouts/MainLayout";
 import BlogCard from "../../components/Blog/BlogCard";
 import { v4 } from "uuid";
 import BlogFeedForm from "../../components/CTA/BlogFeedForm";
 import FavoriteEbooksSidebar from "../../components/Blog/FavoriteEbooksSidebar";
+import { allBlogPosts } from "../../utils/blog.helpers.mjs";
 
 const BlogPosts = ({ posts }) => {
   return (
@@ -45,21 +43,7 @@ const BlogPosts = ({ posts }) => {
 export default BlogPosts;
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join("_posts"));
-
-  const posts = files.map((filename) => {
-    const markdownWithMeta = fs.readFileSync(
-      path.join("_posts", filename),
-      "utf-8"
-    );
-    const { data: frontMatter } = matter(markdownWithMeta);
-
-    return {
-      frontMatter,
-      slug: filename.split(".")[0],
-    };
-  });
-  // TSK: abstract
+  const posts = allBlogPosts;
 
   return { props: { posts } };
 }
