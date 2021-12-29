@@ -9,6 +9,7 @@ import { MDXRemote } from "next-mdx-remote";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
 import TestForm from "../../components/CTA/TestForm";
+import InlineForm from "../../components/CTA/InlineForm";
 import BlogPostLayout from "../../layouts/BlogPostLayout";
 import { useRouter } from "next/router";
 import Error from "next/error";
@@ -53,7 +54,12 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
           <section className="max-w-prose mx-auto blog">
             <MDXRemote
               {...mdxSource}
-              components={{ SyntaxHighlighter, TestForm, TableOfContents }}
+              components={{
+                SyntaxHighlighter,
+                TestForm,
+                TableOfContents,
+                InlineForm,
+              }}
               lazy={true}
             />
           </section>

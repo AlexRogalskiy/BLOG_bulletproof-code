@@ -94,6 +94,10 @@
   .toc-section a {
     @apply font-medium md:text-xl tracking-wide md:tracking-wider;
   }
+
+  h3.form-headline {
+    @apply mt-6 text-2xl text-red-800;
+  }
 }
 
 @layer utilities {
