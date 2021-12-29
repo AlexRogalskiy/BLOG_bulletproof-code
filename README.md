@@ -42,12 +42,11 @@
 ### Optimizations
 
 - Solve "TSK" Messages
-- Add Preact
+- Add [Preact](https://github.com/leerob/leerob.io/blob/main/package.json)
 - Add Motion Animations
 - Add Robots.txt
 - Add Font Select Colors & Hover/Focus States
 - Add Accessibility
-- Think about cutting the blog post guides short and have a CTA at the bottom
 - Pagination on Blog Page
 - A/B Test the Opt-in Pages
 - Remove Convert Kit from Footer & Emails & Forms

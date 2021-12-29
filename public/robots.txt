@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Sitemap: https://bulletproof-code.com/sitemap.xml
+Allow: /
+
+# Host
+Host: https://bulletproof-blog.com
+
+# Sitemaps
+Sitemap: https://bulletproof-blog.com/sitemap.xml
