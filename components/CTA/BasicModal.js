@@ -1,58 +1,29 @@
+import { useRouter } from "next/router";
 import { Fragment, useState } from "react";
-import { Dialog, RadioGroup, Transition } from "@headlessui/react";
+import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
-import { ExclamationCircleIcon, MailIcon } from "@heroicons/react/solid";
-import { classNames } from "../../utils/css.helpers";
+import { MailIcon } from "@heroicons/react/solid";
 import { postData } from "../../utils/http.helpers";
 import Image from "next/image";
 import BigRedCTA from "./BigRedCTA";
 
-const product = {
-  name: "Women's Basic Tee",
-  price: "$32",
-  rating: 3.9,
-  reviewCount: 512,
-  href: "#",
-  imageSrc:
-    "https://tailwindui.com/img/ecommerce-images/product-page-01-featured-product-shot.jpg",
-  imageAlt: "Back of women's Basic Tee in black.",
-  colors: [
-    { name: "Black", bgColor: "bg-gray-900", selectedColor: "ring-gray-900" },
-    {
-      name: "Heather Grey",
-      bgColor: "bg-gray-400",
-      selectedColor: "ring-gray-400",
-    },
-  ],
-  sizes: [
-    { name: "XXS", inStock: true },
-    { name: "XS", inStock: true },
-    { name: "S", inStock: true },
-    { name: "M", inStock: true },
-    { name: "L", inStock: true },
-    { name: "XL", inStock: true },
-    { name: "XXL", inStock: false },
-  ],
-};
+// TSK: Add error handling
+// TSK: A/B Test with and without a name property
+// Add Tags to subscribers && Redo the welcome email!
 
-// TSK: Add Loading & error handling
-// TSK: Abstract this file and rename!
-const BasicModal = ({ open, setOpen, title, cta, image }) => {
-  const [selectedColor, setSelectedColor] = useState(product.colors[0]);
-  const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
-
+const BasicModal = ({ open, setOpen, setError, title, cta, image, slug }) => {
+  const router = useRouter();
   const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    setOpen(false);
 
     const res = await postData("/api/users/subscribe", { email: email });
 
-    setLoading(false);
     setError(res.error);
+
+    if (res.ok) router.push(`/thank-you/${slug}`);
   };
 
   return (
@@ -75,7 +46,7 @@ const BasicModal = ({ open, setOpen, title, cta, image }) => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="hidden fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity md:block" />
+            <Dialog.Overlay className="hidden fixed inset-0 bg-gray-900 bg-opacity-70 transition-opacity md:block" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -119,6 +90,10 @@ const BasicModal = ({ open, setOpen, title, cta, image }) => {
                     <h2 className="text-xl md:text-3xl font-medium text-gray-900 sm:pr-12">
                       Where Should I Send Your Free Guide?
                     </h2>
+                    {/* <p className="text-base mt-2 text-gray-700">
+                      You are so close to receiving your Bulletproof Guide! This
+                      is the last step.
+                    </p> */}
 
                     <section aria-labelledby="options-heading" className="mt-8">
                       <h3 id="options-heading" className="sr-only">
@@ -155,6 +130,9 @@ const BasicModal = ({ open, setOpen, title, cta, image }) => {
                         </div>
 
                         <BigRedCTA cta={cta} type="submit" />
+                        <p className="text-light text-gray-500 text-xs mt-2 text-right">
+                          *We will never send spam!
+                        </p>
                       </form>
                     </section>
                   </div>
@@ -169,8 +147,3 @@ const BasicModal = ({ open, setOpen, title, cta, image }) => {
 };
 
 export default BasicModal;
-
-// TSK: Add a progress bar and start it at 50% => Let them know they "Are Almost There!"
-// TSK: Have a checkbox to download the eBook and the free checklists
-// TSK: It should autofocus into the input box
-// TSK: A/B Test with and without a name property

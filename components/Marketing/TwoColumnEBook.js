@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { useState } from "react";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import { CheckCircleIcon } from "@heroicons/react/solid";
@@ -6,11 +5,13 @@ import Image from "next/image";
 import { v4 } from "uuid";
 import BasicModal from "../CTA/BasicModal";
 import BigRedCTA from "../CTA/BigRedCTA";
+import LoadingSpinner from "../Display/LoadingSpinner";
 
 const TwoColumnEBook = ({ eBookDetails }) => {
   const { title, subTitle, image, cta, wordCount, mainFeatures } = eBookDetails;
 
   const [showModal, setShowModal] = useState(false);
+  const [error, setError] = useState("");
 
   return (
     <article className="px-2 lg:px-0 max-w-6xl mx-auto min-h-screen">
@@ -69,18 +70,13 @@ const TwoColumnEBook = ({ eBookDetails }) => {
             <BasicModal
               open={showModal}
               setOpen={setShowModal}
+              setError={setError}
               cta={cta}
               title={title}
               image={eBookDetails.mockup || image}
+              slug={eBookDetails.slug}
             />
           )}
-
-          {/* {showModal && (
-            <TwoColCTA
-              src="https://bulletproofcode.ck.page/3e34f9b6e0"
-              setShowModal={setShowModal}
-            />
-          )} */}
         </section>
       </section>
     </article>

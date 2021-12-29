@@ -42,6 +42,8 @@
 - A/B Test the Opt-in Pages
 - Remove Convert Kit from Footer & Emails & Forms
 - Create a "Blog Post Title" Component
+- https://vpilip.com/next-js-page-loading-indicator-improve-ux-of-next-js-app/
+- Page Transitions
 
 ---
 
