@@ -27,9 +27,6 @@
 
 ### Features
 
-- Add Google Analytics
-- Add Facebook Pixel
-- Add Sitemap
 - Add NextAuth
 - Change React Syntax Highlighter Styles
 - Jump to Section
@@ -37,14 +34,14 @@
 - Style Scrollbar
 - Download Sticky Opt-In on Blog Post Page
 - Announcment Banner
-- Dark mode?
+- Add Google Analytics
+- Add Facebook Pixel
 
 ### Optimizations
 
 - Solve "TSK" Messages
 - Add [Preact](https://github.com/leerob/leerob.io/blob/main/package.json)
 - Add Motion Animations
-- Add Robots.txt
 - Add Font Select Colors & Hover/Focus States
 - Add Accessibility
 - Pagination on Blog Page

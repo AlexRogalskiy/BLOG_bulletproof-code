@@ -6,7 +6,7 @@
     "shortName": "116+ page value-packed guide",
     "title": "Let me show you what it REALLY takes to land your first developer job in 2022.",
     "subTitle": "No BS. No false promises. Just a step-by-step system that actually works.",
-    "image": "/static/images/bp-front-end/Book_Cover.png",
+    "image": "/static/images/bp-front-end/BP_FE_Cover.png",
     "cta": "Download my Free Guide!",
     "wordCount": "16,411",
     "mainFeatures": [
@@ -31,7 +31,7 @@
     "shortName": "TSK",
     "title": "Bulletproof Front-End Developer Guide Downloadable Extras",
     "subTitle": "No BS. No false promises. Just a step-by-step system that actually TSK.",
-    "image": "/static/images/bp-front-end/Book_Cover.png",
+    "image": "/static/images/bp-front-end/BP_FE_Cover.png",
     "cta": "Download my Free Checklists & PDF's!"
   },
   {
@@ -40,7 +40,7 @@
     "name": "Bulletproof Front-End Newsletter",
     "title": "Bulletproof Front-End Developer Newsletter",
     "subTitle": "TSK",
-    "image": "/static/images/bp-front-end/Book_Cover.png",
+    "image": "/static/images/bp-front-end/BP_FE_Cover.png",
     "cta": "TSK"
   }
 ]

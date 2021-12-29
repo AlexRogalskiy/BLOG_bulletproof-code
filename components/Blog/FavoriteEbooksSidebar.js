@@ -5,17 +5,7 @@ import Image from "next/image";
 const myFavoriteGuides = [
   {
     title: "Become a PAID Front-End Developer",
-    image: "/static/images/bp-front-end/Book_Cover.png",
-    slug: "bulletproof-guide-to-becoming-a-paid-front-end-developer",
-  },
-  {
-    title: "Some Other Great Guide I Will Write",
-    image: "/static/images/bp-front-end/Book_Cover.png",
-    slug: "bulletproof-guide-to-becoming-a-paid-front-end-developer",
-  },
-  {
-    title: "Some Other Great Guide I Will Write",
-    image: "/static/images/bp-front-end/Book_Cover.png",
+    image: "/static/images/bp-front-end/BP_FE_Cover.png",
     slug: "bulletproof-guide-to-becoming-a-paid-front-end-developer",
   },
 ];
