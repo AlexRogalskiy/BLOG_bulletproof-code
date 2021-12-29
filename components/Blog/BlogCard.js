@@ -17,7 +17,7 @@ const BlogCard = ({ postDetails, isPriority = false }) => {
               alt={title}
               layout="fill"
               objectFit="cover"
-              objectPosition="center"
+              objectPosition="50% 15%"
               className="rounded-lg shadow-lg"
               priority={isPriority}
             />

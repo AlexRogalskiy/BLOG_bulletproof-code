@@ -39,13 +39,13 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
             <CategoryBubble key={v4()} category={category} />
           ))}
 
-          <div className="relative h-64 md:h-96 w-full my-5">
+          <div className="relative h-64 md:h-[1250px] w-full my-5">
             <Image
               src={coverImage}
               alt={title + "hero image"}
               layout="fill"
               objectFit="cover"
-              objectPosition="center"
+              objectPosition="top"
               className="rounded-md shadow-lg"
               priority
             />
