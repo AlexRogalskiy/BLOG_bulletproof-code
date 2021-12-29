@@ -44,6 +44,7 @@
 - Create a "Blog Post Title" Component
 - https://vpilip.com/next-js-page-loading-indicator-improve-ux-of-next-js-app/
 - Page Transitions
+- Hide subscribe if user is already subscribed
 
 ---
 

@@ -1,9 +1,20 @@
 import { MailIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useState } from "react";
+import { postData } from "../../utils/http.helpers";
 import BigRedCTA from "./BigRedCTA";
 
-const InlineForm = ({ headline, description, image, cta, btnText }) => {
+const InlineForm = ({
+  headline,
+  description,
+  image,
+  cta,
+  btnText,
+  isPriority,
+  slug,
+}) => {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
 
@@ -11,20 +22,23 @@ const InlineForm = ({ headline, description, image, cta, btnText }) => {
     e.preventDefault();
     const res = await postData("/api/users/subscribe", { email: email });
 
-    if (res.ok) setSuccess(true);
+    console.log("res:", res);
+
+    if (res.ok) router.push(`/thank-you/${slug}`);
+    //     if (res.ok) setSuccess(true);
   };
 
   if (success) return "";
 
   return (
-    <article className="w-full h-full my-12 lg:p-4 bg-white shadow-md flex flex-col md:flex-row-reverse justify-between">
+    <article className="w-full h-full max-h-[500px] my-12 lg:p-4 bg-white shadow-md flex flex-col md:flex-row-reverse justify-between">
       {/* Left Side - Text and Form */}
       <section className="w-full md:w-7/12 order-2 px-4">
         <h3 className="form-headline">{headline}</h3>
-        <p className="text-light text-gray-700 leading-relaxed">
+        <p className="text-light text-gray-700 leading-relaxed py-2">
           {description}
         </p>
-        <p className="text-light text-gray-700 leading-relaxed">{cta}</p>
+        <p className="text-light text-gray-700 leading-relaxed py-2">{cta}</p>
 
         <form onSubmit={handleFormSubmit}>
           {/* Email Input */}
@@ -50,7 +64,6 @@ const InlineForm = ({ headline, description, image, cta, btnText }) => {
                 className="focus:ring-sky-500 focus:border-sky-500 block w-full pl-10 sm:text-sm border-gray-300 rounded-md py-3"
                 placeholder="you@example.com"
                 required
-                autoFocus
               />
             </div>
             <BigRedCTA cta={btnText} type="submit" />
@@ -66,6 +79,7 @@ const InlineForm = ({ headline, description, image, cta, btnText }) => {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+          priority={isPriority}
         />
       </section>
     </article>

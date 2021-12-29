@@ -1,9 +1,9 @@
 import MainLayout from "../../layouts/MainLayout";
 import BlogCard from "../../components/Blog/BlogCard";
 import { v4 } from "uuid";
-import BlogFeedForm from "../../components/CTA/BlogFeedForm";
 import FavoriteEbooksSidebar from "../../components/Blog/FavoriteEbooksSidebar";
 import { allBlogPosts } from "../../utils/blog.helpers.mjs";
+import InlineForm from "../../components/CTA/InlineForm";
 
 const BlogPosts = ({ posts }) => {
   return (
@@ -17,7 +17,15 @@ const BlogPosts = ({ posts }) => {
           ))}
 
           {/* CTA #1 */}
-          <BlogFeedForm isPriority />
+          <InlineForm
+            isPriority
+            slug="bp-front-end-ebook"
+            headline="Download this ESSENTIAL Front-End eBook"
+            description="This comprehensive guide is all you need to succeed in your goal of landing your first developer position."
+            cta="Enter your email below and get started on becoming a PAID Front-End Developer!"
+            btnText="I Want To Be a Developer"
+            image="/static/images/bp-front-end/BP_FE_3D.png"
+          />
 
           {/* ARTCILES #2 & #3 */}
           {posts.slice(1, 3).map((post) => (
@@ -25,7 +33,7 @@ const BlogPosts = ({ posts }) => {
           ))}
 
           {/* CTA #2 */}
-          <BlogFeedForm />
+          {/* <ExtrasForm /> */}
 
           {/* ARTICLES #4+ */}
           {posts.slice(3).map((post) => (

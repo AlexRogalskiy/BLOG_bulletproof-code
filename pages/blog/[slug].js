@@ -8,7 +8,6 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
-import TestForm from "../../components/CTA/TestForm";
 import InlineForm from "../../components/CTA/InlineForm";
 import BlogPostLayout from "../../layouts/BlogPostLayout";
 import { useRouter } from "next/router";
@@ -56,7 +55,6 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
               {...mdxSource}
               components={{
                 SyntaxHighlighter,
-                TestForm,
                 TableOfContents,
                 InlineForm,
               }}
