@@ -8,7 +8,7 @@ const BlogCard = ({ postDetails, isPriority = false }) => {
     postDetails.frontMatter;
 
   return (
-    <article className="bg-white shadow-md rounded-lg hover:scale-105 hover:shadow-lg hover:bg-blueGray-50 transition-all">
+    <article className="bg-white shadow-md rounded-lg hover:scale-105 hover:shadow-lg hover:bg-gray-50 transition-all">
       <Link href={"/blog/" + postDetails.slug} passHref>
         <a>
           <div className="relative w-full h-52">
@@ -35,7 +35,7 @@ const BlogCard = ({ postDetails, isPriority = false }) => {
         </a>
       </Link>
       <Link href={"/blog/" + postDetails.slug}>
-        <a className="text-blue-500 px-8 block py-4 font-medium text-lg hover:text-lightBlue-600 hover:bg-gray-100 transition-colors">
+        <a className="text-blue-500 px-8 block py-4 font-medium text-lg hover:text-sky-600 hover:bg-gray-100 transition-colors">
           Read More
         </a>
       </Link>

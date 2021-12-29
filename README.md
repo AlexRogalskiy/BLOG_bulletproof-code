@@ -52,5 +52,3 @@
 - A/B Test the Opt-in Pages
 - Remove Convert Kit from Footer & Emails & Forms
 - Create a "Blog Post Title" Component
-- Remove blueGray and changed to slate
-- Change lightBlue to sky

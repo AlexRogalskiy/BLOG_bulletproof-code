@@ -39,11 +39,11 @@
   }
 
   .blog h5 {
-    @apply mt-32 md:mt-44 text-3xl md:text-5xl text-lightBlue-700 font-serif;
+    @apply mt-32 md:mt-44 text-3xl md:text-5xl text-sky-700 font-serif;
   }
 
   .blog h6 {
-    @apply mt-16 md:mt-24 mb-32 md:mb-44 text-4xl md:text-6xl font-black font-serif text-lightBlue-900;
+    @apply mt-16 md:mt-24 mb-32 md:mb-44 text-4xl md:text-6xl font-black font-serif text-sky-900;
   }
 
   .blog p {
@@ -58,7 +58,7 @@
   }
 
   .blog ol li em {
-    @apply text-xl mt-6 font-medium text-lightBlue-800 block;
+    @apply text-xl mt-6 font-medium text-sky-800 block;
   }
 
   .blog hr {

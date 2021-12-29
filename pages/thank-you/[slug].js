@@ -10,7 +10,7 @@ const ThankYouTemplate = ({ optInItem }) => {
           Thank You for your interest in the{" "}
           <span className="font-black block">{optInItem.name}</span>
         </h1>
-        <h2 className="mt-4 text-2xl text-lightBlue-700 font-medium">
+        <h2 className="mt-4 text-2xl text-sky-700 font-medium">
           P.S. It is waiting for you in your inbox!
         </h2>
         <div className="relative w-96 h-96 mx-auto my-12">
@@ -23,7 +23,7 @@ const ThankYouTemplate = ({ optInItem }) => {
           />
         </div>
 
-        <div className="max-w-prose mx-auto space-y-6 text-blueGray-800 ">
+        <div className="max-w-prose mx-auto space-y-6 text-gray-800 ">
           <p className="text-axl">
             Check your inbox for the confirmation email with the title "
             <span className="font-bold">
