@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/outline";
 import { CheckCircleIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { v4 } from "uuid";
-import TwoColCTA from "../CTA/TwoColCTA";
+import BasicModal from "../CTA/BasicModal";
 
 const TwoColumnEBook = ({ eBookDetails }) => {
   const { title, subTitle, image, cta, wordCount, mainFeatures } = eBookDetails;
@@ -68,12 +68,14 @@ const TwoColumnEBook = ({ eBookDetails }) => {
             {cta}
           </button>
 
-          {showModal && (
+          {showModal && <BasicModal open={showModal} setOpen={setShowModal} />}
+
+          {/* {showModal && (
             <TwoColCTA
-              src="https://bulletproofcode.ck.page/58932bac1c"
+              src="https://bulletproofcode.ck.page/3e34f9b6e0"
               setShowModal={setShowModal}
             />
-          )}
+          )} */}
         </section>
       </section>
     </article>
