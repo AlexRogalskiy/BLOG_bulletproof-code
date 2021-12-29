@@ -32,14 +32,14 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
           <h1 className="text-3xl md:text-5xl font-black text-gray-900">
             {title}
           </h1>
-          <h2 className="text-xl md:text-3xl font-semibold text-blue-800 mt-3">
+          <h2 className="text-xl md:text-3xl font-semibold text-blue-800 mt-4">
             {subTitle}
           </h2>
           {categories.map((category) => (
             <CategoryBubble key={v4()} category={category} />
           ))}
 
-          <div className="relative h-64 md:h-[1250px] w-full my-5">
+          <div className="relative h-[500px] md:h-[1250px] w-full my-5">
             <Image
               src={coverImage}
               alt={title + "hero image"}

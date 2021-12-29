@@ -48,3 +48,25 @@
 - A/B Test the Opt-in Pages
 - Remove Convert Kit from Footer & Emails & Forms
 - Create a "Blog Post Title" Component
+
+---
+
+---
+
+## My Best Free Content to Create
+
+### Responsive Design in 30 Days (Email Sequence)
+
+### Building a Startup Blog Series
+
+### Beginners Guide to Building an Application
+
+### Problem Solving for Programmers
+
+_(MEMBERS ONLY AREA?)_
+
+### Coding Bootcamp Survival Guide (BONUS for new students)
+
+### Mental Health (Sustainable Productivity Formula) for Programmers
+
+- https://github.com/dreamingechoes/awesome-mental-health
