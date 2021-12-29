@@ -5,6 +5,7 @@ import { CheckCircleIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { v4 } from "uuid";
 import BasicModal from "../CTA/BasicModal";
+import BigRedCTA from "../CTA/BigRedCTA";
 
 const TwoColumnEBook = ({ eBookDetails }) => {
   const { title, subTitle, image, cta, wordCount, mainFeatures } = eBookDetails;
@@ -52,7 +53,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
 
         {/* Right Section - Image and CTA */}
         <section className="w-full lg:w-5/12">
-          <div className="relative h-72 w-72 lg:h-80 lg:w-80 xl:h-[425px] xl:w-[425px] mx-auto">
+          <div className="relative h-72 w-72 lg:h-80 lg:w-80 xl:h-[425px] xl:w-[425px] mx-auto mb-16">
             <Image
               src={image}
               alt={title + " Book Cover"}
@@ -61,14 +62,18 @@ const TwoColumnEBook = ({ eBookDetails }) => {
               priority
             />
           </div>
-          <button
-            onClick={() => setShowModal(true)}
-            className="bg-red-700 rounded mt-16 w-full py-4 px-4 lg:px-8 text-white font-bold text-xl lg:text-2xl uppercase hover:bg-red-800 transition-colors"
-          >
-            {cta}
-          </button>
 
-          {showModal && <BasicModal open={showModal} setOpen={setShowModal} />}
+          <BigRedCTA cta={cta} handleClick={() => setShowModal(true)} />
+
+          {showModal && (
+            <BasicModal
+              open={showModal}
+              setOpen={setShowModal}
+              cta={cta}
+              title={title}
+              image={eBookDetails.mockup || image}
+            />
+          )}
 
           {/* {showModal && (
             <TwoColCTA
