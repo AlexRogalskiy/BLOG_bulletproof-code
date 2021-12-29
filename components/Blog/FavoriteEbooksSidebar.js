@@ -18,7 +18,7 @@ const FavoriteEbooksSidebar = () => {
       </h2>
       <p className="mt-2 text-gray-500">P.S. They are all FREE!</p>
       <div className="space-y-12 mt-8 mb-12">
-        {myFavoriteGuides.map((guide) => (
+        {myFavoriteGuides.map((guide, idx) => (
           <article key={v4()} className="hover:scale-105 transition-all">
             <Link href={"/blog/" + guide.slug} passHref>
               <a>
@@ -28,6 +28,7 @@ const FavoriteEbooksSidebar = () => {
                     alt={guide.title}
                     layout="fill"
                     objectFit="contain"
+                    priority={idx < 3}
                   />
                 </div>
               </a>

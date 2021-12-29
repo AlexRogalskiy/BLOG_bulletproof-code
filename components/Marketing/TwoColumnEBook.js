@@ -1,10 +1,16 @@
+import Script from "next/script";
+import { useState } from "react";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 import { CheckCircleIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { v4 } from "uuid";
+import TwoColCTA from "../CTA/TwoColCTA";
 
 const TwoColumnEBook = ({ eBookDetails }) => {
   const { title, subTitle, image, cta, wordCount, mainFeatures } = eBookDetails;
+
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <article className="px-2 lg:px-0 max-w-6xl mx-auto min-h-screen">
       {/*  Top Section - Title & SubTitle */}
@@ -55,9 +61,19 @@ const TwoColumnEBook = ({ eBookDetails }) => {
               priority
             />
           </div>
-          <button className="bg-red-700 rounded mt-16 w-full py-4 px-4 lg:px-8 text-white font-bold text-xl lg:text-2xl uppercase hover:bg-red-800 transition-colors">
+          <button
+            onClick={() => setShowModal(true)}
+            className="bg-red-700 rounded mt-16 w-full py-4 px-4 lg:px-8 text-white font-bold text-xl lg:text-2xl uppercase hover:bg-red-800 transition-colors"
+          >
             {cta}
           </button>
+
+          {showModal && (
+            <TwoColCTA
+              src="https://bulletproofcode.ck.page/58932bac1c"
+              setShowModal={setShowModal}
+            />
+          )}
         </section>
       </section>
     </article>
