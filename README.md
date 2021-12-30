@@ -2,7 +2,13 @@
 
 ## MVP
 
-1. **DESIGN** - 3 Different CTA Forms for: Download the whole book, Download your Free checklists. [Convert Kit](https://app.convertkit.com/forms/designers/2853063/edit)
+1. Finish BrandPanel
+1. Add Google Analytics & Facebook Pixel
+1. Write email sequence (first 14 days!)
+1. Design OptIn Form & OptIn Page for "Extras"
+1. Design Second Version of eBook OptIn
+1. Place Both of these throughout the eBook and Website evenly!
+1. Create Flash-Cards Page
 
 ---
 
@@ -12,39 +18,45 @@
 
 ### Pages
 
-- Flash Cards
+1. Privacy Policy
+2. Terms & Conditions
+3. About
+4. Contact
+
 - Wall of Love
 - Members Only Page?
-- Privacy Policy
-- Terms & Conditions
-- About
-- Contact
 
 ### Features
 
-- Add NextAuth
-- Add comments
+1. Add NextAuth
+2. Add comments
+
 - Change React Syntax Highlighter Styles
 - Jump to Section
-- Download Sticky Opt-In on Blog Post Page
+- Sticky Opt-In on Blog Post Page
 - Announcment Banner
-- Add Google Analytics
-- Add Facebook Pixel
+- https://vpilip.com/next-js-page-loading-indicator-improve-ux-of-next-js-app/
 
 ### Optimizations
 
-- Solve "TSK" Messages
+1. Solve "TSK" Messages
+2. Page Transitions
+
 - Add [Preact](https://github.com/leerob/leerob.io/blob/main/package.json)
 - Add Motion Animations
 - Add Font Select Colors & Hover/Focus States
 - Add Accessibility
 - Pagination on Blog Page
 - A/B Test the Opt-in Pages
-- Remove Convert Kit from Footer & Emails & Forms
 - Create a "Blog Post Title" Component
-- https://vpilip.com/next-js-page-loading-indicator-improve-ux-of-next-js-app/
-- Page Transitions
 - Hide subscribe if user is already subscribed
+
+### Other
+
+1. Create FB + Pintrest Ads for all the checklists and full ebook
+2. Do Reddit/FB Pre-Launch Strategy
+
+---
 
 ---
 

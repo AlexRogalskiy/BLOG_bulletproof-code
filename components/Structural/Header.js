@@ -18,13 +18,13 @@ const myBestFreeContent = [
     name: "6-Month Front-End Roadmap",
     description:
       "Get a better understanding of where your traffic is coming from.",
-    href: "/opt-in/six-month-front-end-roadmap",
+    href: "/opt-in/bp-front-end-extras",
     icon: CalendarIcon,
   },
   {
     name: "Developer Study Manual",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "/opt-in/developer-study-manual",
+    href: "/opt-in/bp-front-end-extras",
     icon: AcademicCapIcon,
   },
 ];
@@ -38,7 +38,7 @@ const moreResources = [
   {
     name: "Flash Cards",
     description: "Study front-end terminology with interactive flash cards!",
-    href: "/glossary-cards",
+    href: "/flashcards",
   },
   // {
   //   name: "eBooks",

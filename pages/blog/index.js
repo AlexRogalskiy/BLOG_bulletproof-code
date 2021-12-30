@@ -4,6 +4,7 @@ import { v4 } from "uuid";
 import FavoriteEbooksSidebar from "../../components/Blog/FavoriteEbooksSidebar";
 import { allBlogPosts } from "../../utils/blog.helpers.mjs";
 import InlineForm from "../../components/CTA/InlineForm";
+import BrandPanel from "../../components/CTA/BrandPanel";
 
 const BlogPosts = ({ posts }) => {
   return (
@@ -17,7 +18,8 @@ const BlogPosts = ({ posts }) => {
           ))}
 
           {/* CTA #1 */}
-          <InlineForm
+          <BrandPanel />
+          {/* <InlineForm
             isPriority
             slug="bp-front-end-ebook"
             headline="Download this ESSENTIAL Front-End eBook"
@@ -25,7 +27,7 @@ const BlogPosts = ({ posts }) => {
             cta="Enter your email below and get started on becoming a PAID Front-End Developer!"
             btnText="I Want To Be a Developer"
             image="/static/images/bp-front-end/BP_FE_3D.png"
-          />
+          /> */}
 
           {/* ARTCILES #2 & #3 */}
           {posts.slice(1, 3).map((post) => (
