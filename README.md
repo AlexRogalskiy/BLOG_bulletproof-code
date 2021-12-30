@@ -2,13 +2,11 @@
 
 ## MVP
 
-1. Finish BrandPanel
-1. Add Google Analytics & Facebook Pixel
 1. Write email sequence (first 14 days!)
-1. Design OptIn Form & OptIn Page for "Extras"
-1. Design Second Version of eBook OptIn
-1. Place Both of these throughout the eBook and Website evenly!
-1. Create Flash-Cards Page
+2. Design OptIn Form & OptIn Page for "Extras"
+3. Design Second Version of eBook OptIn
+4. Place Both of these throughout the eBook and Website evenly!
+5. Create Flash-Cards Page
 
 ---
 
@@ -50,6 +48,7 @@
 - A/B Test the Opt-in Pages
 - Create a "Blog Post Title" Component
 - Hide subscribe if user is already subscribed
+- https://optimize.google.com/optimize/home/?authuser=0#/accounts/4704579548/containers/14896727
 
 ### Other
 

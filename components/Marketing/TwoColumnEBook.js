@@ -5,7 +5,6 @@ import Image from "next/image";
 import { v4 } from "uuid";
 import BasicModal from "../CTA/BasicModal";
 import BigRedCTA from "../CTA/BigRedCTA";
-import LoadingSpinner from "../Display/LoadingSpinner";
 
 const TwoColumnEBook = ({ eBookDetails }) => {
   const { title, subTitle, image, cta, wordCount, mainFeatures } = eBookDetails;
