@@ -1,7 +1,7 @@
 import TwoColumnEBook from "../../components/Marketing/TwoColumnEBook";
 import SqueezeLayout from "../../layouts/SqueezeLayout";
 import allOffers from "../../data/offers.db.json";
-import TwoColBackground from "../../components/Marketing/TwoColBackground";
+import DoubleDownload from "../../components/Marketing/DoubleDownload";
 
 const OptInTemplate = ({ optInOffer }) => {
   return (
@@ -12,7 +12,7 @@ const OptInTemplate = ({ optInOffer }) => {
 
       {/* TSK: Create an optIn Template for bonus checklists and downloadables */}
       {optInOffer.type === "bonus" && (
-        <TwoColBackground offerDetails={optInOffer} />
+        <DoubleDownload offerDetails={optInOffer} />
       )}
 
       {/* TSK: Create an optIn Template for newsletter */}

@@ -29,11 +29,33 @@
     "slug": "bp-front-end-extras",
     "type": "bonus",
     "name": "Bulletproof Guide to Becoming a PAID Front-End Developer Extras",
-    "shortName": "TSK",
+    "shortName": "Two Essential Downloadable Plans (+ Secret Bonus Checklist)",
     "title": "Bulletproof Front-End Developer Guide Downloadable Extras",
-    "subTitle": "No BS. No false promises. Just a step-by-step system that actually TSK.",
-    "image": "/static/images/bp-front-end/BP_FE_Cover.png",
-    "cta": "Download my Free Checklists & PDF's!"
+    "subTitle": "Put your learning into action with checklists, pdf's, and more!",
+    "cta": "Download My Free Checklists & PDF's!",
+    "image": "/static/images/extras/BP_6-Month-Roadmap_Condensed.png",
+    "downloads": [
+      {
+        "name": "6-Month Front-End Roadmap",
+        "description": "Know EXACTLY what you need to learn every month to become a paid front-end developer in 6-months! Check off each lesson once completed and see your progress across time to inspire and motivate further action towards your goals.",
+        "image": "/static/images/extras/BP_6-Month-Roadmap_Condensed.png",
+        "cta": "Download This Valuable Checklist!",
+        "testimonial": {
+          "quote": "Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci tsk risus aenean curabitur donec aliquet. Mi venenatis in euismod ut.",
+          "name": "Lily Banks",
+          "status": "Software Developer",
+          "profile_picture": "/avatar.jpg"
+        },
+        "icon": "CalendarIcon"
+      },
+      {
+        "name": "Developer Study Manual",
+        "description": "Go into every study session with a plan of action to better retain what you learned. Using this study planner will significantly boost your learning and reduce the amount of time it takes to become a paid front-end engineer.",
+        "image": "/static/images/extras/BP_Study-Guide_Color.png",
+        "cta": "Send Me the Study Plan!",
+        "icon": "AcademicCapIcon"
+      }
+    ]
   },
   {
     "slug": "welcome-to-the-newsletter",
