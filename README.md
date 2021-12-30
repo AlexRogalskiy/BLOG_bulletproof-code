@@ -4,9 +4,10 @@
 
 1. Write email sequence (first 14 days!)
 2. Design OptIn Form & OptIn Page for "Extras"
-3. Design Second Version of eBook OptIn
-4. Place Both of these throughout the eBook and Website evenly!
-5. Create Flash-Cards Page
+3. Create Mockup for Downloadable Extras and put in the Modal
+4. Design Second Version of eBook OptIn
+5. Place Both of these throughout the eBook and Website evenly!
+6. Create Flash-Cards Page
 
 ---
 

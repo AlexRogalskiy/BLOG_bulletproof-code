@@ -1,12 +1,14 @@
-import {
-  AcademicCapIcon,
-  CalendarIcon,
-  InboxIcon,
-  SparklesIcon,
-} from "@heroicons/react/outline";
+import { useState } from "react";
+import { AcademicCapIcon, CalendarIcon } from "@heroicons/react/outline";
 import BigRedCTA from "../CTA/BigRedCTA";
+import BasicModal from "../CTA/BasicModal";
 
 const DoubleDownload = ({ offerDetails }) => {
+  const [open, setOpen] = useState(false);
+  const [error, setError] = useState(false);
+
+  console.log("offerDetails:", offerDetails);
+
   return (
     <article className="relative py-16 overflow-hidden">
       <section className="relative">
@@ -30,7 +32,10 @@ const DoubleDownload = ({ offerDetails }) => {
                   {offerDetails.downloads[0].description}
                 </p>
                 <div className="mt-6">
-                  <button className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-600 hover:bg-sky-700">
+                  <button
+                    onClick={() => setOpen(true)}
+                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-600 hover:bg-sky-700"
+                  >
                     {offerDetails.downloads[0].cta}
                   </button>
                 </div>
@@ -95,7 +100,10 @@ const DoubleDownload = ({ offerDetails }) => {
                   {offerDetails.downloads[1].description}
                 </p>
                 <div className="mt-6">
-                  <button className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-600 hover:bg-sky-700">
+                  <button
+                    onClick={() => setOpen(true)}
+                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-600 hover:bg-sky-700"
+                  >
                     {offerDetails.downloads[1].cta}
                   </button>
                 </div>
@@ -113,7 +121,20 @@ const DoubleDownload = ({ offerDetails }) => {
           </div>
         </div>
       </section>
-      {/* <BigRedCTA /> */}
+      <section className="mt-24 -mb-16 pb-4 max-w-xl mx-auto">
+        <BigRedCTA handleClick={() => setOpen(true)} cta={offerDetails.cta} />
+      </section>
+      <section>
+        <BasicModal
+          open={open}
+          setOpen={setOpen}
+          setError={setError}
+          title={offerDetails.title}
+          cta={offerDetails.cta}
+          image={offerDetails.image}
+          slug={offerDetails.slug}
+        />
+      </section>
     </article>
   );
 };
