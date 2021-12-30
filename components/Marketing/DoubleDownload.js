@@ -133,6 +133,7 @@ const DoubleDownload = ({ offerDetails }) => {
           cta={offerDetails.cta}
           image={offerDetails.image}
           slug={offerDetails.slug}
+          type={offerDetails.type}
         />
       </section>
     </article>

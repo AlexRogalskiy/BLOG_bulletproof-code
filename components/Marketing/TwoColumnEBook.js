@@ -74,6 +74,7 @@ const TwoColumnEBook = ({ eBookDetails }) => {
               title={title}
               image={eBookDetails.mockup || image}
               slug={eBookDetails.slug}
+              type={eBookDetails.type}
             />
           )}
         </section>

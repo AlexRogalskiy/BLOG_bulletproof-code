@@ -11,7 +11,16 @@ import BigRedCTA from "./BigRedCTA";
 // TSK: A/B Test with and without a name property
 // Add Tags to subscribers && Redo the welcome email!
 
-const BasicModal = ({ open, setOpen, setError, title, cta, image, slug }) => {
+const BasicModal = ({
+  open,
+  setOpen,
+  setError,
+  title,
+  cta,
+  image,
+  slug,
+  type,
+}) => {
   const router = useRouter();
   const [email, setEmail] = useState("");
 
@@ -88,7 +97,8 @@ const BasicModal = ({ open, setOpen, setError, title, cta, image, slug }) => {
                   </div>
                   <div className="sm:col-span-8 lg:col-span-7">
                     <h2 className="text-xl md:text-3xl font-medium text-gray-900 sm:pr-12">
-                      Where Should I Send Your Free Guide?
+                      Where Should I Send Your Free{" "}
+                      <span className="uppercase">{type}</span>?
                     </h2>
                     {/* <p className="text-base mt-2 text-gray-700">
                       You are so close to receiving your Bulletproof Guide! This
