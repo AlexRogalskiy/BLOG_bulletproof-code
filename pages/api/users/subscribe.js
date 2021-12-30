@@ -2,15 +2,19 @@ import { postData } from "../../../utils/http.helpers";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { email } = req.body;
-    console.log("email:", email);
+    const { email, type } = req.body;
+    let formId = process.env.CONVERTKIT_FORM_ID_FE_Ebook;
+
+    if (type === "bonus") formId = process.env.CONVERTKIT_FORM_ID_FE_Extras;
+
+    console.log("formId:", formId);
 
     if (!email || email.trim() === "")
       return res.status(400).json({ error: "Email is Required" });
 
     try {
       const res = await postData(
-        `${process.env.CONVERTKIT_API_URL}forms/${process.env.CONVERTKIT_FORM_ID}/subscribe`,
+        `${process.env.CONVERTKIT_API_URL}forms/${formId}/subscribe`,
         { email: email, api_key: process.env.CONVERTKIT_API_KEY }
       );
 

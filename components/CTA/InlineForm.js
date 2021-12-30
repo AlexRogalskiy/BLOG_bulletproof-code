@@ -13,6 +13,7 @@ const InlineForm = ({
   btnText,
   isPriority,
   slug,
+  type,
 }) => {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ const InlineForm = ({
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    const res = await postData("/api/users/subscribe", { email: email });
+    const res = await postData("/api/users/subscribe", { email, type });
 
     console.log("res:", res);
 
@@ -28,7 +29,7 @@ const InlineForm = ({
     //     if (res.ok) setSuccess(true);
   };
 
-  if (success) return "";
+  if (success) return "Success!";
 
   return (
     <article className="w-full h-full my-12 lg:p-4 bg-white shadow-md flex flex-col md:flex-row-reverse justify-between">

@@ -17,7 +17,11 @@ const BlogPosts = ({ posts }) => {
           ))}
 
           {/* CTA #1 */}
-          <BrandPanel />
+          <BrandPanel
+            cta="Download My Free eBook!"
+            type="eBook"
+            slug="bp-front-end-ebook"
+          />
 
           {/* ARTCILES #2 & #3 */}
           {posts.slice(1, 3).map((post) => (

@@ -28,7 +28,7 @@ const BasicModal = ({
     e.preventDefault();
     setOpen(false);
 
-    const res = await postData("/api/users/subscribe", { email: email });
+    const res = await postData("/api/users/subscribe", { email, type });
 
     setError(res.error);
 

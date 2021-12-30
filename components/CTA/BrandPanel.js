@@ -1,7 +1,26 @@
-import { MailIcon } from "@heroicons/react/outline";
+import { useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
+import { MailIcon } from "@heroicons/react/outline";
+import { postData } from "../../utils/http.helpers";
 
-const BrandPanel = () => {
+const BrandPanel = ({ type, slug, cta }) => {
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    const res = await postData("/api/users/subscribe", { email, type });
+
+    console.log("res:", res);
+
+    if (res.ok) router.push(`/thank-you/${slug}`);
+    //     if (res.ok) setSuccess(true);
+  };
+
+  if (success) return "Success!";
+
   return (
     <div className="max-w-7xl mx-auto py-16 sm:px-6 lg:px-8">
       <div className="bg-sky-600 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
@@ -16,11 +35,11 @@ const BrandPanel = () => {
               </span>
             </h2>
             <p className="mt-4 text-lg leading-6 text-sky-200">
-              This comprehensive eBook is all you need to succeed in your goal
+              This comprehensive {type} is all you need to succeed in your goal
               of landing your first developer position.
             </p>
 
-            <form className="mt-8">
+            <form className="mt-8" onSubmit={handleFormSubmit}>
               <div className="my-2">
                 <label htmlFor="email" className="sr-only">
                   Email
@@ -47,7 +66,7 @@ const BrandPanel = () => {
                 type="submit"
                 className=" bg-gray-800 border border-transparent rounded-md shadow px-5 py-3 inline-flex w-full justify-center items-center text-base font-medium text-gray-100 hover:bg-gray-700 focus:bg-gray-700 transition-colors"
               >
-                Download My Free eBook!
+                {cta}
               </button>
             </form>
           </div>
