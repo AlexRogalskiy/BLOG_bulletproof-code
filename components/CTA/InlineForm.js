@@ -31,7 +31,7 @@ const InlineForm = ({
   if (success) return "";
 
   return (
-    <article className="w-full h-full max-h-[500px] my-12 lg:p-4 bg-white shadow-md flex flex-col md:flex-row-reverse justify-between">
+    <article className="w-full h-full my-12 lg:p-4 bg-white shadow-md flex flex-col md:flex-row-reverse justify-between">
       {/* Left Side - Text and Form */}
       <section className="w-full md:w-7/12 order-2 px-4">
         <h3 className="form-headline">{headline}</h3>
