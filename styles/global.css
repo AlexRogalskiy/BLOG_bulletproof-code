@@ -191,8 +191,8 @@
     transform-style: preserve-3d;
   }
   .flipped .flip-content {
-    transform: rotateY(180deg);
-    transition: transform 700ms;
+    transform: rotateY(-180deg);
+    transition: transform 500ms;
   }
   .flip-front,
   .flip-back {
@@ -202,6 +202,7 @@
     align-items: center;
     height: 384px;
     width: 100%;
+    padding: 8px 32px;
   }
   .flip-back {
     transform: rotateY(180deg);

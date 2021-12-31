@@ -2,21 +2,21 @@
   {
     "concept": "Application Programming Interface",
     "acronym": "API",
-    "description": "TSK",
+    "description": "A software intermediary that allows two applications to talk to each other.",
     "category": "Back-End",
     "difficulty": 1
   },
   {
     "concept": "Big O Notation",
     "acronym": "Big O",
-    "description": "TSK",
+    "description": "A mathmatical notation used to classify algorithms based on their run time & space requirements and their relationship to input size.",
     "category": "Computer Science",
     "difficulty": 1
   },
   {
     "concept": "Recursion",
     "acronym": "",
-    "description": "TSK",
+    "description": "A computer programming technique whereby a procedure, subroutine, function, or algorithm calls itself one or more times until a specified condition is met.",
     "category": "Computer Science",
     "difficulty": 10
   },
@@ -24,49 +24,49 @@
     "concept": "Agile Development",
     "acronym": "Agile",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Meta",
     "difficulty": 1
   },
   {
     "concept": "Full-Stack Developer",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Cache",
     "acronym": "",
-    "description": "TSK",
-    "category": "TSK",
+    "description": "A hardware or software component that stores data so that future requests for that data are served faster.",
+    "category": "Computer Science",
     "difficulty": 1
   },
   {
     "concept": "Content Managment System",
     "acronym": "CMS",
-    "description": "TSK",
-    "category": "TSK",
+    "description": "An application that enables users to collaborately create, edit, publish, and store digital content.",
+    "category": "Back-End",
     "difficulty": 1
   },
   {
     "concept": "Cookies",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Computer Science",
     "difficulty": 1
   },
   {
     "concept": "Production Environment",
     "acronym": "Prod",
     "description": "TSK",
-    "category": "TSK",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Version Control",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
@@ -80,21 +80,21 @@
     "concept": "Minimum Viable Product",
     "acronym": "MVP",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Marketing",
     "difficulty": 1
   },
   {
     "concept": "Scope Creep",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Meta",
     "difficulty": 1
   },
   {
-    "concept": "TSK",
+    "concept": "Secure Sockets Layer",
     "acronym": "SSL",
-    "description": "TSK",
-    "category": "TSK",
+    "description": "A security protocol that creates an encrypted link between a web server and a browser.",
+    "category": "Computer Science",
     "difficulty": 1
   },
   {
@@ -121,14 +121,14 @@
   {
     "concept": "Command-Line Interface",
     "acronym": "CLI",
-    "description": "TSK",
-    "category": "TSK",
+    "description": "A text-based prompter which connects a user to a computer program or operating system.",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Code Compiler",
     "acronym": "",
-    "description": "TSK",
+    "description": "A computer program that translates source code written in one language into another target language (usually machine code).",
     "category": "Computer Science",
     "difficulty": 1
   },
@@ -140,31 +140,24 @@
     "difficulty": 1
   },
   {
-    "concept": "Deployment",
-    "acronym": "",
-    "description": "TSK",
-    "category": "TSK",
-    "difficulty": 1
-  },
-  {
     "concept": "TSK",
     "acronym": "IDE",
     "description": "TSK",
-    "category": "Tools TSK",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Inheritence vs. Composition",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Computer Science",
     "difficulty": 1
   },
   {
     "concept": "JavaScript Object Notation",
     "acronym": "JSON",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Back-End",
     "difficulty": 1
   },
   {
@@ -220,7 +213,7 @@
     "concept": "Null vs. Undefined",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Meta",
     "difficulty": 1
   },
   {
@@ -234,21 +227,21 @@
     "concept": "Operators & Expressions",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Iteration",
     "acronym": "Loop",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Meta",
     "difficulty": 1
   },
   {
     "concept": "Server-Side Rendering vs. Client-Side Rendering",
     "acronym": "SSR vs. CSR",
     "description": "TSK",
-    "category": "TSK",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
@@ -269,7 +262,7 @@
     "concept": "Abstraction",
     "acronym": "",
     "description": "TSK",
-    "category": "TSK",
+    "category": "Meta",
     "difficulty": 1
   },
   {
@@ -336,13 +329,6 @@
     "difficulty": 1
   },
   {
-    "concept": "",
-    "acronym": "",
-    "description": "TSK",
-    "category": "TSK",
-    "difficulty": 1
-  },
-  {
     "concept": "Call-to-Action",
     "acronym": "CTA",
     "description": "TSK",
@@ -360,77 +346,77 @@
     "concept": "Language",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Library",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Framework",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "HTML",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "CSS",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "JavaScript",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "React",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "Angular",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "Postgres",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Back-End",
     "difficulty": 1
   },
   {
     "concept": "MongoDB",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Back-End",
     "difficulty": 1
   },
   {
     "concept": "NodeJS",
     "acronym": "",
     "description": "TSK",
-    "category": "Languages, Libraries & Frameworks",
+    "category": "Back-End",
     "difficulty": 1
   },
   {

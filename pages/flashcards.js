@@ -23,11 +23,6 @@ const filters = [
       { value: "back-end", label: "Back-End" },
       { value: "design", label: "Design" },
       { value: "marketing", label: "Marketing" },
-      // TSKSKKTKSKS CHNAGE THIS ONE
-      {
-        value: "languages-libraries-frameworks",
-        label: "Lanaguages, Libraries & Frameworks",
-      },
       { value: "meta", label: "Meta" },
     ],
   },
