@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
-import { shuffleArray, sortAlphabetically } from "../utils/sorting.helpers";
+import {
+  shuffleArray,
+  sortAlphabetically,
+  sortByNumber,
+} from "../utils/sorting.helpers";
 import FlashcardData from "../data/terminology.db.json";
 import { v4 } from "uuid";
 import MobileListCategories from "../components/Display/MobileListCategories";
 import ListCategoriesBar from "../components/Display/ListCategoriesBar";
 import Flashcard from "../components/Display/Flashcard";
 import MainLayout from "../layouts/MainLayout";
+import { useRouter } from "next/router";
 
 const sortOptions = [
   { value: "category", name: "Category" },
@@ -13,65 +18,68 @@ const sortOptions = [
   { value: "difficulty", name: "Difficutly" },
   { value: "random", name: "Random" },
 ];
-const filters = [
-  {
-    id: "category",
-    name: "Category",
-    options: [
-      { value: "computer-science", label: "Computer Science" },
-      { value: "general-programming", label: "General Programming" },
-      { value: "front-end", label: "Front-End" },
-      { value: "back-end", label: "Back-End" },
-      { value: "design", label: "Design" },
-      { value: "marketing", label: "Marketing" },
-      { value: "meta", label: "Meta" },
-    ],
-  },
-  {
-    id: "difficulty",
-    name: "Difficulty",
-    options: [
-      { value: 1, label: "Easy" },
-      { value: 2, label: "Novice" },
-      { value: 3, label: "Intermediate" },
-      { value: 4, label: "Advanced" },
-      { value: 5, label: "Expert" },
-    ],
-  },
-];
+// const filters = [
+//   {
+//     id: "category",
+//     name: "Category",
+//     options: [
+//       { value: "computer-science", label: "Computer Science" },
+//       { value: "general-programming", label: "General Programming" },
+//       { value: "front-end", label: "Front-End" },
+//       { value: "back-end", label: "Back-End" },
+//       { value: "design", label: "Design" },
+//       { value: "marketing", label: "Marketing" },
+//       { value: "meta", label: "Meta" },
+//     ],
+//   },
+//   {
+//     id: "difficulty",
+//     name: "Difficulty",
+//     options: [
+//       { value: 1, label: "Easy", isChecked: true },
+//       { value: 2, label: "Novice", isChecked: true },
+//       { value: 3, label: "Intermediate", isChecked: true },
+//       { value: 4, label: "Advanced", isChecked: true },
+//       { value: 5, label: "Expert", isChecked: true },
+//     ],
+//   },
+// ];
 
 const Flashcards = ({ flashcards }) => {
+  const router = useRouter();
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-  const [currCards, setCurrCards] = useState(flashcards);
+  const [filteredCards, setFilteredCards] = useState(flashcards);
   const [sortBy, setSortBy] = useState("category");
-  const [filter, setFilter] = useState();
 
   useEffect(() => {
     let sortedCards;
-    console.log("sortBy :>> ", sortBy);
+
     if (sortBy === "category") {
-      sortedCards = sortAlphabetically(currCards || [], "category");
-    } else if (sortBy === "alphabetical") {
-      sortedCards = sortAlphabetically(currCards || [], "concept");
+      sortedCards = sortAlphabetically(filteredCards, "category");
     }
-    console.log("sortedCards :>> ", sortedCards);
-    setCurrCards(sortedCards);
+    if (sortBy === "alphabetical") {
+      sortedCards = sortAlphabetically(filteredCards, "concept");
+    }
+    if (sortBy === "difficulty") {
+      sortedCards = sortByNumber(filteredCards, "difficulty");
+    }
+    if (sortBy === "random") {
+      sortedCards = shuffleArray(filteredCards);
+    }
+
+    setFilteredCards(sortedCards);
+    router.push(
+      {
+        pathname: router.pathname,
+        query: {
+          ...router.query,
+          sortBy,
+        },
+      },
+      undefined,
+      { shallow: true }
+    );
   }, [sortBy]);
-
-  // useEffect(() => {
-  //   let sortedCards;
-
-  //   if (sortBy === "category") {
-  //     sortedCards = sortAlphabetically(visibleCards, "category");
-  //   }
-  //   if (sortBy === "alphabetical") {
-  //     sortedCards = sortAlphabetically(visibleCards, "concept");
-  //   }
-
-  //   console.log("sortedCards:", sortedCards);
-
-  //   setVisibleCards(sortedCards);
-  // }, [sortBy]);
 
   return (
     <MainLayout>
@@ -79,7 +87,6 @@ const Flashcards = ({ flashcards }) => {
       <MobileListCategories
         open={mobileFiltersOpen}
         setOpen={setMobileFiltersOpen}
-        filters={filters}
       />
 
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -98,7 +105,6 @@ const Flashcards = ({ flashcards }) => {
         <ListCategoriesBar
           setMobileFiltersOpen={setMobileFiltersOpen}
           sortOptions={sortOptions}
-          filters={filters}
           sortBy={sortBy}
           setSortBy={setSortBy}
         />
@@ -110,8 +116,8 @@ const Flashcards = ({ flashcards }) => {
           </h2>
 
           <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
-            {currCards?.map((flashcard) => (
-              <Flashcard key={v4()} flashcard={flashcard} />
+            {filteredCards?.map((flashcard) => (
+              <Flashcard key={v4()} flashcard={flashcard} sortBy={sortBy} />
             ))}
           </div>
         </section>
@@ -135,3 +141,6 @@ export async function getStaticProps() {
 // TSK: Have option to go full screen and focus on one card at a time
 // TSK: Have option to choose random cards or by category that filters out the resutls or alphabetical
 // TSK: Add a "Flip All Cards" button
+// TSK: Make the Randomize a seperate button
+// TSK: Make it sortable by difficulty-easy and difficulty-hardest
+// TSK: Create Filter Methods

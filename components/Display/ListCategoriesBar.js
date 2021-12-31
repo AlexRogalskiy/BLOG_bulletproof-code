@@ -5,7 +5,6 @@ import { classNames } from "../../utils/css.helpers";
 import { v4 } from "uuid";
 
 const ListCategoriesBar = ({
-  filters,
   sortOptions,
   setMobileFiltersOpen,
   sortBy,
@@ -72,7 +71,7 @@ const ListCategoriesBar = ({
           Flashcard Filters
         </button>
 
-        <Popover.Group className="hidden sm:flex sm:items-baseline sm:space-x-8">
+        {/* <Popover.Group className="hidden sm:flex sm:items-baseline sm:space-x-8">
           {filters.map((section, sectionIdx) => (
             <Popover
               as="div"
@@ -107,12 +106,12 @@ const ListCategoriesBar = ({
                 <Popover.Panel className="origin-top-right absolute right-0 mt-2 bg-white rounded-md shadow-2xl p-4 ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <form className="space-y-4">
                     {section.options.map((option, optionIdx) => (
-                      <div key={option.value} className="flex items-center">
+                      <div key={v4()} className="flex items-center">
                         <input
                           id={`filter-${section.id}-${optionIdx}`}
                           name={`${section.id}[]`}
                           defaultValue={option.value}
-                          defaultChecked={option.checked}
+                          defaultChecked={option.isChecked}
                           type="checkbox"
                           className="h-4 w-4 border-gray-300 rounded text-sky-600 focus:ring-sky-500"
                         />
@@ -129,7 +128,7 @@ const ListCategoriesBar = ({
               </Transition>
             </Popover>
           ))}
-        </Popover.Group>
+        </Popover.Group> */}
       </div>
     </section>
   );

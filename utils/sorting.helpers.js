@@ -2,6 +2,10 @@ export function sortAlphabetically(arr, key) {
   return arr.sort((a, b) => a[key].localeCompare(b[key]));
 }
 
+export function sortByNumber(arr, key) {
+  return arr.sort((a, b) => a[key] - b[key]);
+}
+
 export function shuffleArray(arr) {
   let randomIdx;
   let currIdx = arr.length;

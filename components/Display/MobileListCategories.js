@@ -4,7 +4,7 @@ import { XIcon } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { classNames } from "../../utils/css.helpers";
 
-const MobileListCategories = ({ open, setOpen, filters }) => {
+const MobileListCategories = ({ open, setOpen }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
@@ -47,7 +47,7 @@ const MobileListCategories = ({ open, setOpen, filters }) => {
             </div>
 
             {/* Filters */}
-            <form className="mt-4">
+            {/* <form className="mt-4">
               {filters.map((section) => (
                 <Disclosure
                   as="div"
@@ -101,7 +101,7 @@ const MobileListCategories = ({ open, setOpen, filters }) => {
                   )}
                 </Disclosure>
               ))}
-            </form>
+            </form> */}
           </div>
         </Transition.Child>
       </Dialog>
