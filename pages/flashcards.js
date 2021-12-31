@@ -8,10 +8,10 @@ import Flashcard from "../components/Display/Flashcard";
 import MainLayout from "../layouts/MainLayout";
 
 const sortOptions = [
-  { name: "Category", href: "?sort=category" },
-  { name: "Alphabetical", href: "?sort=alphabetical" },
-  { name: "Difficutly", href: "?sort=difficulty" },
-  { name: "Random", href: "?sort=random" },
+  { value: "category", name: "Category" },
+  { value: "alphabetical", name: "Alphabetical" },
+  { value: "difficulty", name: "Difficutly" },
+  { value: "random", name: "Random" },
 ];
 const filters = [
   {
@@ -41,11 +41,37 @@ const filters = [
 ];
 
 const Flashcards = ({ flashcards }) => {
-  // SORT BY: Alphabetical, Category, Difficulty
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const [currCards, setCurrCards] = useState(flashcards);
   const [sortBy, setSortBy] = useState("category");
   const [filter, setFilter] = useState();
 
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  useEffect(() => {
+    let sortedCards;
+    console.log("sortBy :>> ", sortBy);
+    if (sortBy === "category") {
+      sortedCards = sortAlphabetically(currCards || [], "category");
+    } else if (sortBy === "alphabetical") {
+      sortedCards = sortAlphabetically(currCards || [], "concept");
+    }
+    console.log("sortedCards :>> ", sortedCards);
+    setCurrCards(sortedCards);
+  }, [sortBy]);
+
+  // useEffect(() => {
+  //   let sortedCards;
+
+  //   if (sortBy === "category") {
+  //     sortedCards = sortAlphabetically(visibleCards, "category");
+  //   }
+  //   if (sortBy === "alphabetical") {
+  //     sortedCards = sortAlphabetically(visibleCards, "concept");
+  //   }
+
+  //   console.log("sortedCards:", sortedCards);
+
+  //   setVisibleCards(sortedCards);
+  // }, [sortBy]);
 
   return (
     <MainLayout>
@@ -73,6 +99,8 @@ const Flashcards = ({ flashcards }) => {
           setMobileFiltersOpen={setMobileFiltersOpen}
           sortOptions={sortOptions}
           filters={filters}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
         />
 
         {/* Concept Card Grid */}
@@ -82,7 +110,7 @@ const Flashcards = ({ flashcards }) => {
           </h2>
 
           <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
-            {flashcards.map((flashcard) => (
+            {currCards?.map((flashcard) => (
               <Flashcard key={v4()} flashcard={flashcard} />
             ))}
           </div>

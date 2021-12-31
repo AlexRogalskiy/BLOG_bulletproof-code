@@ -3,9 +3,14 @@ import { Menu, Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { classNames } from "../../utils/css.helpers";
 import { v4 } from "uuid";
-import Link from "next/link";
 
-const ListCategoriesBar = ({ filters, sortOptions, setMobileFiltersOpen }) => {
+const ListCategoriesBar = ({
+  filters,
+  sortOptions,
+  setMobileFiltersOpen,
+  sortBy,
+  setSortBy,
+}) => {
   return (
     <section
       aria-labelledby="filter-heading"
@@ -41,16 +46,16 @@ const ListCategoriesBar = ({ filters, sortOptions, setMobileFiltersOpen }) => {
                 {sortOptions.map((option) => (
                   <Menu.Item key={v4()}>
                     {({ active }) => (
-                      <Link href={option.href}>
-                        <a
-                          className={classNames(
-                            active ? "bg-gray-100" : "",
-                            "block px-4 py-2 text-sm font-medium text-gray-900"
-                          )}
-                        >
-                          {option.name}
-                        </a>
-                      </Link>
+                      <p
+                        onClick={() => setSortBy(option.value)}
+                        className={classNames(
+                          active && option.value !== sortBy ? "bg-sky-100" : "",
+                          option.value === sortBy && "bg-sky-200",
+                          "block px-4 py-2 text-sm font-medium text-gray-900 cursor-pointer"
+                        )}
+                      >
+                        {option.name}
+                      </p>
                     )}
                   </Menu.Item>
                 ))}

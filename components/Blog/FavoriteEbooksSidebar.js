@@ -5,7 +5,7 @@ import Image from "next/image";
 const myFavoriteGuides = [
   {
     title: "Become a PAID Front-End Developer",
-    image: "/static/images/bp-front-end/BP_FE_Cover.png",
+    image: "/static/images/bp-front-end/BP_Full-Offer-Ad.png",
     slug: "bulletproof-guide-to-becoming-a-paid-front-end-developer",
   },
 ];
