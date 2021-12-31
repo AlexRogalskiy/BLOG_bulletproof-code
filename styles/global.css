@@ -187,16 +187,19 @@
   .flip-content {
     width: 100%;
     height: 384px;
-    transition: transform 500ms;
+    transition: transform 800ms;
     transform-style: preserve-3d;
   }
   .flipped .flip-content {
     transform: rotateY(180deg);
-    transition: transform 400ms;
+    transition: transform 700ms;
   }
   .flip-front,
   .flip-back {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 384px;
     width: 100%;
   }

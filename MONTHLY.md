@@ -2,6 +2,10 @@
 
 ## JANUARY
 
+- [] Finish Flashcard Page
+- [] Finish PP, T&C, About, Contact Pages
+- [] Add Comments and Auth to the Blog
+- [] Solve most Blog Page "TSK" Messages
 - [] Publish BP FE Guide & Ads
 - [] Plan the Startup for the Series in February
 - [] Finish Codefi JavaScript Notes
