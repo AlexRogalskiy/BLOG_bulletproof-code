@@ -75,7 +75,7 @@ const BrandPanel = ({ type, slug, cta }) => {
           <Image
             className="transform translate-x-6 translate-y-6 rounded-md sm:translate-x-16 lg:translate-y-20"
             src="/static/images/bp-front-end/BP_FE_3D.png"
-            alt="TSK"
+            alt="3D Mockup of TSK"
             layout="fill"
             objectFit="cover"
             objectPosition="left top"

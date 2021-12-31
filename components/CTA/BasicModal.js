@@ -8,8 +8,6 @@ import Image from "next/image";
 import BigRedCTA from "./BigRedCTA";
 
 // TSK: Add error handling
-// TSK: A/B Test with and without a name property
-// Add Tags to subscribers && Redo the welcome email!
 
 const BasicModal = ({
   open,

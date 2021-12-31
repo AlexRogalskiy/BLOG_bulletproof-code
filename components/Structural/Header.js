@@ -41,12 +41,6 @@ const moreResources = [
     href: "/flashcards",
   },
   // {
-  //   name: "eBooks",
-  //   description:
-  //     "Learn how to maximize our platform to get the most out of i tsk.",
-  //   href: "/e-book",
-  // },
-  // {
   //   name: "Wall of Love",
   //   description:
   //     "See what meet-ups and other events we might be planning near tsk you.",
