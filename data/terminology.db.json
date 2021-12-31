@@ -1,0 +1,506 @@
+[
+  {
+    "concept": "Application Programming Interface",
+    "acronym": "API",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Back-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "Big O Notation",
+    "acronym": "Big O",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Computer Science",
+    "difficulty": 1
+  },
+  {
+    "concept": "Recursion",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Computer Science",
+    "difficulty": 10
+  },
+  {
+    "concept": "Agile Development",
+    "acronym": "Agile",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Full-Stack Developer",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Cache",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Content Managment System",
+    "acronym": "CMS",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Cookies",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Production Environment",
+    "acronym": "Prod",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Version Control",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Hyper-Text Transfer Protocol",
+    "acronym": "HTTP",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "General Programming",
+    "difficulty": 1
+  },
+  {
+    "concept": "Minimum Viable Product",
+    "acronym": "MVP",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Scope Creep",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "TSK",
+    "acronym": "SSL",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Asynchronous Coding",
+    "acronym": "Async",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "General Programming",
+    "difficulty": 1
+  },
+  {
+    "concept": "Functional Programming",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "General Programming",
+    "difficulty": 1
+  },
+  {
+    "concept": "Object-Oriented Programming",
+    "acronym": "OOP",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "General Programming",
+    "difficulty": 1
+  },
+  {
+    "concept": "Command-Line Interface",
+    "acronym": "CLI",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Code Compiler",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Computer Science",
+    "difficulty": 1
+  },
+  {
+    "concept": "Database",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Back-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "Deployment",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "TSK",
+    "acronym": "IDE",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Tools TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Inheritence vs. Composition",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "JavaScript Object Notation",
+    "acronym": "JSON",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Document Object Model",
+    "acronym": "DOM",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Front-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "TSK Arche",
+    "acronym": "REST",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Back-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "Search-Engine Optimization",
+    "acronym": "SEO",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Marketing",
+    "difficulty": 1
+  },
+  {
+    "concept": "Accessibility",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Front-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "TSK",
+    "acronym": "UI/UX",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Design",
+    "difficulty": 1
+  },
+  {
+    "concept": "Boolean Variable",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "General Programming",
+    "difficulty": 1
+  },
+  {
+    "concept": "Conditional Statement",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "General Programming",
+    "difficulty": 1
+  },
+  {
+    "concept": "Null vs. Undefined",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Semantic HTML",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Front-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "Operators & Expressions",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Iteration",
+    "acronym": "Loop",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Server-Side Rendering vs. Client-Side Rendering",
+    "acronym": "SSR vs. CSR",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Idempotent",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Computer Science",
+    "difficulty": 1
+  },
+  {
+    "concept": "Memoization",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Computer Science",
+    "difficulty": 1
+  },
+  {
+    "concept": "Abstraction",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Algorithm",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Computer Science",
+    "difficulty": 1
+  },
+  {
+    "concept": "Data Structure",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Computer Science",
+    "difficulty": 1
+  },
+  {
+    "concept": "Mobile-First Design Methodology",
+    "acronym": "Mobile-First",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Front-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "Responsive Design",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Front-End",
+    "difficulty": 1
+  },
+  {
+    "concept": "Sitemap",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Design",
+    "difficulty": 1
+  },
+  {
+    "concept": "Wireframe",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Design",
+    "difficulty": 1
+  },
+  {
+    "concept": "Kearning",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Design",
+    "difficulty": 1
+  },
+  {
+    "concept": "Leading",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Design",
+    "difficulty": 1
+  },
+  {
+    "concept": "Tracking",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Design",
+    "difficulty": 1
+  },
+  {
+    "concept": "",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "TSK",
+    "difficulty": 1
+  },
+  {
+    "concept": "Call-to-Action",
+    "acronym": "CTA",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Marketing",
+    "difficulty": 1
+  },
+  {
+    "concept": "A/B Testing",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Marketing",
+    "difficulty": 1
+  },
+  {
+    "concept": "Language",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "Library",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "Framework",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "HTML",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "CSS",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "JavaScript",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "React",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "Angular",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "Postgres",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "MongoDB",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "NodeJS",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "Languages, Libraries & Frameworks",
+    "difficulty": 1
+  },
+  {
+    "concept": "Data Type",
+    "acronym": "",
+    "description": "TSK",
+    "image_url": "TSK",
+    "category": "General Programming",
+    "difficulty": 1
+  }
+]
