@@ -5,6 +5,7 @@ import { v4 } from "uuid";
 import MobileListCategories from "../components/Display/MobileListCategories";
 import ListCategoriesBar from "../components/Display/ListCategoriesBar";
 import Flashcard from "../components/Display/Flashcard";
+import MainLayout from "../layouts/MainLayout";
 
 const sortOptions = [
   { name: "Category", href: "?sort=category" },
@@ -40,8 +41,6 @@ const filters = [
 ];
 
 const Flashcards = ({ flashcards }) => {
-  console.log("flashcards:", flashcards);
-
   // SORT BY: Alphabetical, Category, Difficulty
   const [sortBy, setSortBy] = useState("category");
   const [filter, setFilter] = useState();
@@ -49,7 +48,7 @@ const Flashcards = ({ flashcards }) => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   return (
-    <section>
+    <MainLayout>
       {/* Mobile Filters */}
       <MobileListCategories
         open={mobileFiltersOpen}
@@ -59,13 +58,13 @@ const Flashcards = ({ flashcards }) => {
 
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         {/* Top Bar - Title & Description */}
-        <div className="py-24 text-center">
+        <div className="py-12 text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
             Coding Concept Flashcards
           </h1>
           <p className="mt-4 max-w-3xl mx-auto text-base text-gray-500">
-            Thoughtfully designed concepts tsk for the workspace, home, and
-            travel.
+            Increase your nerd knowledge exponentially by memorizing these
+            carefully curated concepts.
           </p>
         </div>
 
@@ -89,7 +88,7 @@ const Flashcards = ({ flashcards }) => {
           </div>
         </section>
       </section>
-    </section>
+    </MainLayout>
   );
 };
 

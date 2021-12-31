@@ -4,426 +4,426 @@
     "acronym": "API",
     "description": "A software intermediary that allows two applications to talk to each other.",
     "category": "Back-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Big O Notation",
     "acronym": "Big O",
     "description": "A mathmatical notation used to classify algorithms based on their run time & space requirements and their relationship to input size.",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 4
   },
   {
     "concept": "Recursion",
     "acronym": "",
     "description": "A computer programming technique whereby a procedure, subroutine, function, or algorithm calls itself one or more times until a specified condition is met.",
     "category": "Computer Science",
-    "difficulty": 10
+    "difficulty": 5
   },
   {
     "concept": "Agile Development",
     "acronym": "Agile",
-    "description": "TSK",
+    "description": "A project management methodology focused on the iterative development process, where feedback is continuously gathered from users and stakeholders to create the best user experience.",
     "category": "Meta",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Full-Stack Developer",
     "acronym": "",
-    "description": "TSK",
+    "description": "A programmer who is skilled in both back-end and front-end tools and technologies.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Cache",
     "acronym": "",
     "description": "A hardware or software component that stores data so that future requests for that data are served faster.",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Content Managment System",
     "acronym": "CMS",
     "description": "An application that enables users to collaborately create, edit, publish, and store digital content.",
     "category": "Back-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Cookies",
     "acronym": "",
-    "description": "TSK",
+    "description": "Text files with small data are placed on your browser by a web server to identify your computer.",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Production Environment",
     "acronym": "Prod",
-    "description": "TSK",
+    "description": "Where the latest versions of software are pushed live to intended users. And, this is where dreams are made.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Version Control",
     "acronym": "",
-    "description": "TSK",
+    "description": "The tools and practices used to keep many versions of a software system configured and organized.",
     "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Hyper-Text Transfer Protocol",
     "acronym": "HTTP",
-    "description": "TSK",
+    "description": "The communicatoin protocl used to connect to web servers on the internet or local network.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Minimum Viable Product",
     "acronym": "MVP",
-    "description": "TSK",
+    "description": "A product with enough features to attract early-adopter customers to validate a product idea.",
     "category": "Marketing",
     "difficulty": 1
   },
   {
     "concept": "Scope Creep",
     "acronym": "",
-    "description": "TSK",
+    "description": "When a project's requirements changes and work starts to extend beyond what was originally planned.",
     "category": "Meta",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Secure Sockets Layer",
     "acronym": "SSL",
     "description": "A security protocol that creates an encrypted link between a web server and a browser.",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 4
   },
   {
     "concept": "Asynchronous Coding",
     "acronym": "Async",
-    "description": "TSK",
+    "description": "A programming model where operations take place in non-sequential fashion.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 4
   },
   {
     "concept": "Functional Programming",
-    "acronym": "",
-    "description": "TSK",
+    "acronym": "FP",
+    "description": "A programming paradigm where programs are constructued by applying and composing (primarily) pure functions.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Object-Oriented Programming",
     "acronym": "OOP",
-    "description": "TSK",
+    "description": "A programming paradigm that organizes software around data, or objects, rather than functions and logic.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Command-Line Interface",
     "acronym": "CLI",
     "description": "A text-based prompter which connects a user to a computer program or operating system.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Code Compiler",
     "acronym": "",
     "description": "A computer program that translates source code written in one language into another target language (usually machine code).",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Database",
     "acronym": "",
-    "description": "TSK",
+    "description": "A structured storage space where data is held and easily accessible.",
     "category": "Back-End",
     "difficulty": 1
   },
   {
-    "concept": "TSK",
+    "concept": "Integrated Development Environment",
     "acronym": "IDE",
-    "description": "TSK",
+    "description": "A software application for building software applications that combines common developer tools into a single GUI.",
     "category": "General Programming",
     "difficulty": 1
   },
   {
-    "concept": "Inheritence vs. Composition",
+    "concept": "Inheritance",
     "acronym": "",
-    "description": "TSK",
+    "description": "A programming technique that allows programmers to create classes that are build upon existing classes.",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 3
+  },
+  {
+    "concept": "Composition",
+    "acronym": "",
+    "description": "A programming technique that allows programmers to create a model that is associated with multiple objects or classes.",
+    "category": "Computer Science",
+    "difficulty": 3
   },
   {
     "concept": "JavaScript Object Notation",
     "acronym": "JSON",
-    "description": "TSK",
+    "description": "An open standard file and data interchange format that is both human and machine readable/friendly.",
     "category": "Back-End",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Document Object Model",
     "acronym": "DOM",
-    "description": "TSK",
+    "description": "A built-in HTML API that defines the document's logical structure in object format for easily creating or manipulating elements.",
     "category": "Front-End",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
-    "concept": "TSK Arche",
+    "concept": "Representational State Transfer",
     "acronym": "REST",
-    "description": "TSK",
+    "description": "A software architecture style for building scalable web services typically using HTTP & JSON.",
     "category": "Back-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Search-Engine Optimization",
     "acronym": "SEO",
-    "description": "TSK",
+    "description": "The process of enhancing the quality and quantity of website traffic to a website via search engines.",
     "category": "Marketing",
     "difficulty": 1
   },
   {
     "concept": "Accessibility",
     "acronym": "",
-    "description": "TSK",
+    "description": "A key component every project should implement that improves the ability for disabled or impaired users to interact with your app or website.",
     "category": "Front-End",
-    "difficulty": 1
+    "difficulty": 4
   },
   {
-    "concept": "TSK",
+    "concept": "User Interface & User Experience",
     "acronym": "UI/UX",
-    "description": "TSK",
+    "description": "UI refers to the aesthetic elements that users interact with, while UX denotes a user's experience with the product or service.",
     "category": "Design",
-    "difficulty": 1
-  },
-  {
-    "concept": "Boolean Variable",
-    "acronym": "",
-    "description": "TSK",
-    "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Conditional Statement",
     "acronym": "",
-    "description": "TSK",
+    "description": "A programming expression or command that instructs a computer to run code if a specified statement is truthy or not.",
     "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Null vs. Undefined",
     "acronym": "",
-    "description": "TSK",
+    "description": "Variables without a value are globally 'Undefined' but can be explicitly set to show this using 'Null'.",
     "category": "Meta",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Semantic HTML",
     "acronym": "",
-    "description": "TSK",
+    "description": "the use of HTML markup to reinforce the meaning of the information in webpages to both programmers and robots.",
     "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "Operators & Expressions",
     "acronym": "",
-    "description": "TSK",
+    "description": "An expression is code that may be evaluated to determine it's value primarily via operators such as '+', '>' or '==='.",
     "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Iteration",
     "acronym": "Loop",
-    "description": "TSK",
+    "description": "A process in programming wherein a set of instructions or structures are repeated in a sequence for a number of times until a condition is met.",
     "category": "Meta",
     "difficulty": 1
   },
   {
     "concept": "Server-Side Rendering vs. Client-Side Rendering",
     "acronym": "SSR vs. CSR",
-    "description": "TSK",
+    "description": "A website or application can either be rendered on the server (SSR) or by the clients browser (CSR).",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Idempotent",
     "acronym": "",
-    "description": "TSK",
+    "description": "A property of some operations such that no matter how many times you execute them, you achieve the same result.",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 4
   },
   {
     "concept": "Memoization",
     "acronym": "",
-    "description": "TSK",
+    "description": "An optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs are given.",
     "category": "Computer Science",
-    "difficulty": 1
+    "difficulty": 5
   },
   {
     "concept": "Abstraction",
     "acronym": "",
-    "description": "TSK",
+    "description": "A technique for arranging complexity of computer systems by hidding away functionality when the implementation is not essential to know.",
     "category": "Meta",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Algorithm",
     "acronym": "",
-    "description": "TSK",
+    "description": "A procedure or formula for solving a problem, based on conducting a sequence of specified actions.",
     "category": "Computer Science",
     "difficulty": 1
   },
   {
     "concept": "Data Structure",
     "acronym": "",
-    "description": "TSK",
+    "description": "A specialized format for organizing, processing, retrieving, and storing data.",
     "category": "Computer Science",
     "difficulty": 1
   },
   {
     "concept": "Mobile-First Design Methodology",
     "acronym": "Mobile-First",
-    "description": "TSK",
+    "description": "An approach to front-end development wherein you design and code the mobile site first before implementing the desktop version.",
     "category": "Front-End",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Responsive Design",
     "acronym": "",
-    "description": "TSK",
+    "description": "A design approach used to create content that adjusts smoothly to various screen sizes and devises.",
     "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "Sitemap",
     "acronym": "",
-    "description": "TSK",
+    "description": "A diagrammatic representation of a website used to plan the organization of pages to improve project clarity and user experience.",
     "category": "Design",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Wireframe",
     "acronym": "",
-    "description": "TSK",
+    "description": "A two-dimensional skeletal outline of a webpage or application.",
     "category": "Design",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
-    "concept": "Kearning",
+    "concept": "Kerning",
     "acronym": "",
-    "description": "TSK",
+    "description": "The spacing between individual letters or characters.",
     "category": "Design",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Leading",
     "acronym": "",
-    "description": "TSK",
+    "description": "The space between multiple lines of type, measured from baseline to baseline.",
     "category": "Design",
     "difficulty": 1
   },
   {
     "concept": "Tracking",
     "acronym": "",
-    "description": "TSK",
+    "description": "The typographer's term for letter-spacing over a range of characters.",
     "category": "Design",
     "difficulty": 1
   },
   {
     "concept": "Call-to-Action",
     "acronym": "CTA",
-    "description": "TSK",
+    "description": "An instruction to the audience to provoke an immediate response, usually to take some sort of desired action.",
     "category": "Marketing",
     "difficulty": 1
   },
   {
-    "concept": "A/B Testing",
-    "acronym": "",
-    "description": "TSK",
+    "concept": "Split Testing",
+    "acronym": "A/B Tests",
+    "description": "A randomized experimentation process wherein two or more versions of a variable are changed and compared to see which performs better for a specific desired outcome.",
     "category": "Marketing",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Language",
     "acronym": "",
-    "description": "TSK",
+    "description": "A specific set of syntax used to write computer programs.",
     "category": "General Programming",
     "difficulty": 1
   },
   {
     "concept": "Library",
     "acronym": "",
-    "description": "TSK",
+    "description": "A collection of prewritten code programmers can implement and use in a top-down manner.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
     "concept": "Framework",
     "acronym": "",
-    "description": "TSK",
+    "description": "A prepackaged set of solutions that solves common development problems from the foundation upward.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 2
   },
   {
-    "concept": "HTML",
-    "acronym": "",
-    "description": "TSK",
+    "concept": "HyperText Markup Language",
+    "acronym": "HTML",
+    "description": "Standard markup language for documents designed to be displayed in a web browser.",
     "category": "Front-End",
     "difficulty": 1
   },
   {
-    "concept": "CSS",
-    "acronym": "",
-    "description": "TSK",
+    "concept": "Cascading Style Sheets",
+    "acronym": "CSS",
+    "description": "A style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
     "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "JavaScript",
-    "acronym": "",
-    "description": "TSK",
+    "acronym": "JS",
+    "description": "A dynamic programming language used for web development, software applications, game creation, and more.",
     "category": "Front-End",
     "difficulty": 1
   },
   {
     "concept": "React",
     "acronym": "",
-    "description": "TSK",
+    "description": "A free and open-source JavaScript library for building user interfaces based on UI components.",
     "category": "Front-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Angular",
     "acronym": "",
-    "description": "TSK",
+    "description": "A platform and JavaScript framework for building single-page client applications using HTML & Typescript.",
     "category": "Front-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
-    "concept": "Postgres",
-    "acronym": "",
-    "description": "TSK",
+    "concept": "PostgreSQL",
+    "acronym": "Postgres",
+    "description": "A free and open-source relational database management system emphasizing extensibility and SQL compliance.",
     "category": "Back-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "MongoDB",
     "acronym": "",
-    "description": "TSK",
+    "description": "An open-source NoSQL database management program useful for working with large sets of distributed data.",
     "category": "Back-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "NodeJS",
     "acronym": "",
-    "description": "TSK",
+    "description": "An open-source development platform for executing JavaScript code on the server-side.",
     "category": "Back-End",
-    "difficulty": 1
+    "difficulty": 3
   },
   {
     "concept": "Data Type",
     "acronym": "",
-    "description": "TSK",
+    "description": "A classification that specifies which type of value a variable has and what type of mathematical, relational, or logical operations can be applied to it without causing an error.",
     "category": "General Programming",
-    "difficulty": 1
+    "difficulty": 2
   }
 ]
