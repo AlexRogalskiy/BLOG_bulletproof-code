@@ -10,6 +10,7 @@ const sortOptions = [
   { name: "Category", href: "?sort=category" },
   { name: "Alphabetical", href: "?sort=alphabetical" },
   { name: "Difficutly", href: "?sort=difficulty" },
+  { name: "Random", href: "?sort=random" },
 ];
 const filters = [
   {
@@ -87,45 +88,9 @@ const Flashcards = ({ flashcards }) => {
           </h2>
 
           <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
-            {/* TSK: Make into a Flashcard */}
             {flashcards.map((flashcard) => (
               <Flashcard key={v4()} flashcard={flashcard} />
             ))}
-          </div>
-        </section>
-
-        <section
-          aria-labelledby="featured-heading"
-          className="relative mt-16 rounded-lg overflow-hidden lg:h-96"
-        >
-          <div className="absolute inset-0">
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
-              alt=""
-              className="w-full h-full object-center object-cover"
-            />
-          </div>
-          <div aria-hidden="true" className="relative w-full h-96 lg:hidden" />
-          <div aria-hidden="true" className="relative w-full h-32 lg:hidden" />
-          <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-75 p-6 rounded-bl-lg rounded-br-lg backdrop-filter backdrop-blur sm:flex sm:items-center sm:justify-between lg:inset-y-0 lg:inset-x-auto lg:w-96 lg:rounded-tl-lg lg:rounded-br-none lg:flex-col lg:items-start">
-            <div>
-              <h2
-                id="featured-heading"
-                className="text-xl font-bold text-white"
-              >
-                Workspace Collection
-              </h2>
-              <p className="mt-1 text-sm text-gray-300">
-                Upgrade your desk with objects that keep you organized and
-                clear-minded.
-              </p>
-            </div>
-            <a
-              href="#"
-              className="mt-6 flex-shrink-0 flex bg-white bg-opacity-0 py-3 px-4 border border-white border-opacity-25 rounded-md items-center justify-center text-base font-medium text-white hover:bg-opacity-10 sm:mt-0 sm:ml-8 lg:ml-0 lg:w-full"
-            >
-              View the collection
-            </a>
           </div>
         </section>
       </section>
@@ -147,3 +112,4 @@ export async function getStaticProps() {
 
 // TSK: Have option to go full screen and focus on one card at a time
 // TSK: Have option to choose random cards or by category that filters out the resutls or alphabetical
+// TSK: Add a "Flip All Cards" button

@@ -16,6 +16,9 @@ module.exports = {
       listStyleType: {
         roman: "upper-roman",
       },
+      animation: {
+        "single-spin": "spin 1s linear",
+      },
     },
   },
   plugins: [
