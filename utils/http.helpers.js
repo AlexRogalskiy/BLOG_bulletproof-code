@@ -3,6 +3,8 @@ export async function fetchData(input, init) {
   return res.json();
 }
 
+export const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
 export async function postData(url, data) {
   const res = await fetch(url, {
     method: "POST",

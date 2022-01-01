@@ -65,7 +65,7 @@ export async function deleteComment(req, res) {
     // Delete comment
     await redis.lrem(url, 0, JSON.stringify(comment));
 
-    return res.status(200).json();
+    return res.status(200).json({});
   } catch (err) {
     console.log("ERROR:", err);
     return res.status(400).json({ message: "Unexpected error occured. " });
@@ -73,7 +73,7 @@ export async function deleteComment(req, res) {
 }
 
 // !
-export async function fetchComment(req, res) {
+export async function fetchComments(req, res) {
   // *
   const { url } = req.query;
 

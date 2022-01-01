@@ -58,7 +58,7 @@ const moods = [
   },
 ];
 
-const CommentForm = () => {
+const CommentForm = ({ text, setText, onSubmit }) => {
   const { isAuthenticated, logout, loginWithPopup, user } = useAuth0();
 
   const [selected, setSelected] = useState(moods[5]);

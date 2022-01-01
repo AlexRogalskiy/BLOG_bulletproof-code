@@ -1,7 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { distanceToNow } from "../../utils/time.helpers";
 
-const CommentList = () => {
+const CommentList = ({ comments, onDelete }) => {
   const { user } = useAuth0();
 
   return (

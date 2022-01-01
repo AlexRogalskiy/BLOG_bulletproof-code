@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import useSWR from "swr";
+import { fetcher } from "../utils/http.helpers";
 
 export function useComments() {
   // *
@@ -11,14 +12,10 @@ export function useComments() {
   const [url, setUrl] = useState(null);
 
   // *
+  const query = new URLSearchParams({ url });
   const { data: comments, mutate } = useSWR(
-    () => {
-      const query = new URLSearchParams({ url });
-      return `/api/comment?${query.toString()}`;
-    },
-    {
-      initialData: [],
-    }
+    `/api/comment?${query.toString()}`,
+    fetcher
   );
 
   // *
