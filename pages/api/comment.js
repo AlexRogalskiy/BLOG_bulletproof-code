@@ -7,7 +7,6 @@ import {
 export default async function handler(req, res) {
   switch (req.method) {
     case "GET":
-      console.log("GET REQUEST!!!!");
       return fetchComments(req, res);
     case "POST":
       return createComment(req, res);

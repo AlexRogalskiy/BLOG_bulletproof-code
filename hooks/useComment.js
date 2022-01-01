@@ -49,7 +49,7 @@ export function useComments() {
 
   // *
   const onDelete = async (comment) => {
-    const token = getAccessTokenSilently();
+    const token = await getAccessTokenSilently();
 
     try {
       await fetch("/api/comment", {

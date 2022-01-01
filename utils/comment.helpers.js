@@ -59,7 +59,7 @@ export async function deleteComment(req, res) {
     const isAdmin = process.env.NEXT_PUBLIC_AUTH0_ADMIN_EMAIL === user.email;
     const isAuthor = user.sub === comment.user.sub;
 
-    if (!isAdmin || !isAuthor)
+    if (!isAdmin && !isAuthor)
       return res.status(400).json({ message: "Need authorization." });
 
     // Delete comment

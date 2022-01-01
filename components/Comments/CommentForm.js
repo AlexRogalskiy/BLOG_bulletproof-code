@@ -40,14 +40,14 @@ const moods = [
     value: "sad",
     icon: EmojiSadIcon,
     iconColor: "text-white",
-    bgColor: "bg-blue-400",
+    bgColor: "bg-sky-400",
   },
   {
     name: "Thumbsy",
     value: "thumbsy",
     icon: ThumbUpIcon,
     iconColor: "text-white",
-    bgColor: "bg-blue-500",
+    bgColor: "bg-sky-500",
   },
   {
     name: "I feel nothing",
@@ -77,7 +77,7 @@ const CommentForm = ({ text, setText, onSubmit }) => {
         </div>
         <div className="min-w-0 flex-1">
           <div>
-            <div className="border-b border-gray-200 focus-within:border-blue-500">
+            <div className="border-b border-gray-200 focus-within:border-sky-500">
               <label htmlFor="comment" className="sr-only">
                 Add your comment
               </label>
@@ -85,7 +85,7 @@ const CommentForm = ({ text, setText, onSubmit }) => {
                 rows={3}
                 name="comment"
                 id="comment"
-                className="block w-full border-0 border-b border-transparent p-0 pb-2 resize-none focus:ring-0 focus:border-blue-500 sm:text-sm"
+                className="block w-full border-0 border-b border-transparent p-0 pb-2 resize-none focus:ring-0 focus:border-sky-500 sm:text-sm"
                 disabled={!isAuthenticated}
                 placeholder={
                   isAuthenticated
@@ -190,14 +190,14 @@ const CommentForm = ({ text, setText, onSubmit }) => {
                 {isAuthenticated ? (
                   <button
                     type="submit"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-500 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-sky-500 hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
                   >
                     Post
                   </button>
                 ) : (
                   <button
                     type="button"
-                    className="py-2 px-4 rounded bg-blue-500 text-white disabled:opacity-40 hover:bg-blue-600"
+                    className="py-2 px-4 rounded bg-sky-500 text-white disabled:opacity-40 hover:bg-sky-600"
                     onClick={() => loginWithPopup()}
                   >
                     Log In
