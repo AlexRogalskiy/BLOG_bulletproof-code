@@ -11,9 +11,6 @@
 
 ### Features
 
-1. Add NextAuth
-2. Add comments
-
 - Change React Syntax Highlighter Styles
 - "Jump to Section" for blog posts
 - Sticky Opt-In on Blog Post Page
