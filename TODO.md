@@ -2,6 +2,7 @@
 
 1. About
 2. Contact
+3. FAQ
 
 - Wall of Love
 - Members Only Page
