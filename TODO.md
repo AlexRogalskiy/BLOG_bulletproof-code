@@ -7,6 +7,7 @@
 
 - Wall of Love
 - Members Only Page
+- Dynamic thank you page "/thank-you/blog-account" for users who sign up via the blog comments
 
 ### Features
 
