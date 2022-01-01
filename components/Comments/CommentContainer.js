@@ -19,7 +19,7 @@ const CommentContainer = () => {
       </h2>
 
       <div className="flex space-x-6 mb-12">
-        {comments.length > 10 &&
+        {comments?.length > 10 &&
           moods.map((mood) => (
             <div className="flex items-center">
               <div
