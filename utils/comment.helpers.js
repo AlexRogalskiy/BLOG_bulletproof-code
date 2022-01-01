@@ -4,7 +4,7 @@ import { getUser } from "./user.helpers";
 
 // !
 export async function createComment(req, res) {
-  const { url, text } = req.body;
+  const { url, text, mood } = req.body;
   const { authorization } = req.headers;
 
   // *
@@ -25,6 +25,7 @@ export async function createComment(req, res) {
       created_at: Date.now(),
       url,
       text,
+      mood,
       user: { name, picture, sub, email },
     };
 
@@ -91,6 +92,8 @@ export async function fetchComments(req, res) {
       delete comment.user.email;
       return comment;
     });
+
+    console.log(`comments`, comments);
 
     return res.status(200).json(comments);
   } catch (err) {

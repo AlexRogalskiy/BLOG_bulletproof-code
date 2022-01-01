@@ -1,4 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import Image from "next/image";
 import { distanceToNow } from "../../utils/time.helpers";
 
 const CommentList = ({ comments, onDelete }) => {
@@ -14,7 +15,7 @@ const CommentList = ({ comments, onDelete }) => {
         return (
           <div key={comment.created_at} className="flex space-x-4 mt-12">
             <div className="flex-shrink-0">
-              <img
+              <Image
                 src={comment.user.picture}
                 alt={comment.user.name}
                 width={40}
@@ -26,7 +27,7 @@ const CommentList = ({ comments, onDelete }) => {
             <div className="flex-grow">
               <div className="flex space-x-2">
                 <b>{comment.user.name}</b>
-                <time className="text-gray-400">
+                <time className="text-gray-400 mr-auto">
                   {distanceToNow(comment.created_at)}
                 </time>
                 {(isAdmin || isAuthor) && (

@@ -34,6 +34,7 @@
 - A/B Test the Opt-in Pages
 - Create a "Blog Post Title" Component
 - Exit Intent Modal
+- Seperate Moods from comments so users can leave a reaction without having to comment or setup an account
 - Replace UUID with Nanoid
 - Hide subscribe if user is already subscribed
 - https://optimize.google.com/optimize/home/?authuser=0#/accounts/4704579548/containers/14896727

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import useSWR from "swr";
 import { fetcher } from "../utils/http.helpers";
+import { moods } from "../utils/mood.helpers";
 
 export function useComments() {
   // *
@@ -9,6 +10,7 @@ export function useComments() {
 
   // *
   const [text, setText] = useState("");
+  const [mood, setMood] = useState(moods[2]);
   const [url, setUrl] = useState(null);
 
   // *
@@ -30,10 +32,12 @@ export function useComments() {
 
     const token = await getAccessTokenSilently();
 
+    console.log(`e`, e);
+
     try {
       await fetch("/api/comment", {
         method: "POST",
-        body: JSON.stringify({ url, text }),
+        body: JSON.stringify({ url, text, mood }),
         headers: {
           Authorization: token,
           "Content-Type": "application/json",
@@ -41,6 +45,7 @@ export function useComments() {
       });
 
       setText("");
+      setMood(moods[2]);
       await mutate();
     } catch (err) {
       console.log("ERROR:", err);
@@ -68,5 +73,5 @@ export function useComments() {
   };
 
   // *
-  return { text, setText, comments, onSubmit, onDelete };
+  return { text, setText, mood, setMood, comments, onSubmit, onDelete, moods };
 }
