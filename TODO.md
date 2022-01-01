@@ -1,9 +1,7 @@
 ### Pages
 
-1. Privacy Policy
-2. Terms & Conditions
-3. About
-4. Contact
+1. About
+2. Contact
 
 - Wall of Love
 - Members Only Page
