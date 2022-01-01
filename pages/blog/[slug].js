@@ -14,6 +14,7 @@ import { useRouter } from "next/router";
 import Error from "next/error";
 import CategoryBubble from "../../components/Blog/CategoryBubble";
 import TableOfContents from "../../components/Blog/TableOfContents";
+import CommentContainer from "../../components/Comments/CommentContainer";
 
 const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
   const router = useRouter();
@@ -61,6 +62,7 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
               lazy={true}
             />
           </section>
+          <CommentContainer />
         </>
       )}
     </BlogPostLayout>

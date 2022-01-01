@@ -1,13 +1,13 @@
 ### Pages
 
-1. Flashcards Page
-2. Privacy Policy
-3. Terms & Conditions
-4. About
-5. Contact
+1. Privacy Policy
+2. Terms & Conditions
+3. About
+4. Contact
 
 - Wall of Love
 - Members Only Page
+- Dynamic thank you page "/thank-you/blog-account" for users who sign up via the blog comments
 
 ### Features
 
@@ -25,6 +25,7 @@
 1. Solve "TSK" Messages
 2. Page Transitions
 
+- Google Lighthouse Fixes
 - Add [Preact](https://github.com/leerob/leerob.io/blob/main/package.json)
 - Add Motion Animations
 - Add Font Select Colors & Hover/Focus States
@@ -33,6 +34,8 @@
 - A/B Test the Opt-in Pages
 - Create a "Blog Post Title" Component
 - Exit Intent Modal
+- Seperate Moods from comments so users can leave a reaction without having to comment or setup an account
+- Replace UUID with Nanoid
 - Hide subscribe if user is already subscribed
 - https://optimize.google.com/optimize/home/?authuser=0#/accounts/4704579548/containers/14896727
 
