@@ -32,7 +32,9 @@
 - Create a "Blog Post Title" Component
 - Exit Intent Modal
 - Seperate Moods from comments so users can leave a reaction without having to comment or setup an account
+- Add reply to others comments
 - Replace UUID with Nanoid
+- More indepth privacy policy & t&c
 - Hide subscribe if user is already subscribed
 - https://optimize.google.com/optimize/home/?authuser=0#/accounts/4704579548/containers/14896727
 

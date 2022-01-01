@@ -1,6 +1,8 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /privacy-policy
+Disallow: /terms-and-conditions
 
 # Host
 Host: https://bulletproof-blog.com

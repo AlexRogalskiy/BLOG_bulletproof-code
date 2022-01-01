@@ -9,6 +9,7 @@ module.exports = {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/privacy-policy", "/terms-and-conditions"],
       },
       //       {
       //         userAgent: "test-bot",

@@ -98,6 +98,17 @@
   h3.form-headline {
     @apply mt-6 text-2xl text-red-800;
   }
+
+  .text-page h1 {
+    @apply text-2xl font-bold;
+  }
+  .text-page h2 {
+    @apply text-xl font-medium;
+  }
+  .text-page p,
+  li {
+    @apply my-2 font-light text-gray-800;
+  }
 }
 
 @layer utilities {

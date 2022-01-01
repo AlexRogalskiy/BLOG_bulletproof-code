@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://bulletproof-blog.com</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.204Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/blog</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/opt-in/bp-front-end-ebook</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/opt-in/bp-front-end-extras</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/opt-in/welcome-to-the-newsletter</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/thank-you/bp-front-end-ebook</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/thank-you/bp-front-end-extras</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/thank-you/welcome-to-the-newsletter</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
-<url><loc>https://bulletproof-blog.com/blog/bulletproof-guide-to-becoming-a-paid-front-end-developer</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2021-12-29T02:39:24.205Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.040Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/blog</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/flashcards</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/privacy-policy</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/terms-and-conditions</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/opt-in/bp-front-end-ebook</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/opt-in/bp-front-end-extras</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/opt-in/welcome-to-the-newsletter</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/thank-you/bp-front-end-ebook</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/thank-you/bp-front-end-extras</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/thank-you/welcome-to-the-newsletter</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
+<url><loc>https://bulletproof-blog.com/blog/bulletproof-guide-to-becoming-a-paid-front-end-developer</loc><changefreq>weekly</changefreq><priority>0.4</priority><lastmod>2022-01-01T16:33:28.041Z</lastmod></url>
 </urlset>
