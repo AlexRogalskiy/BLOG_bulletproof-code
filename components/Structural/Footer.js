@@ -4,7 +4,7 @@ const navigation = {
     { name: "eBooks", href: "/blog" },
     {
       name: "Best Free Content",
-      href: "/blog/bulletproof-guide-to-become-a-paid-front-end-developer",
+      href: "/blog/bulletproof-guide-to-becoming-a-paid-front-end-developer",
     },
   ],
   support: [
@@ -12,7 +12,10 @@ const navigation = {
     { name: "GitHub", href: "https://github.com/Bulletproof-Code" },
     { name: "Email", href: "mailto:codebulletproof@gmail.com" },
   ],
-  company: [{ name: "About", href: "/about" }],
+  company: [
+    { name: "About", href: "/about" },
+    { name: "FAQ", href: "/faq" },
+  ],
   legal: [
     { name: "Privacy", href: "/privacy-policy" },
     { name: "Terms", href: "/terms-and-conditions" },
