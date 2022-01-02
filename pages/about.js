@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import MainLayout from "../layouts/MainLayout";
 
 const AboutPage = () => {
@@ -11,10 +13,10 @@ const AboutPage = () => {
         <section className="pt-16">
           <div className="text-base max-w-prose mx-auto lg:max-w-none">
             <h2 className="text-base text-sky-600 font-semibold tracking-wide uppercase">
-              Transactions
+              Front-End
             </h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              What makes us different
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
+              What is Bulletproof Code?
             </p>
           </div>
           <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
@@ -47,7 +49,7 @@ const AboutPage = () => {
                   id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi
                   enim fermentum lacus in. Viverra.
                 </p>
-                <h3>We’re here to help</h3>
+                <h3>I'm here to help</h3>
                 <p>
                   Tincidunt integer commodo, cursus etiam aliquam neque, et.
                   Consectetur pretium in volutpat, diam. Montes, magna cursus
@@ -58,20 +60,18 @@ const AboutPage = () => {
               </div>
               <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
                 <div className="rounded-md shadow">
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700"
-                  >
-                    Contact sales
-                  </a>
+                  <Link href="/tsk">
+                    <a className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700">
+                      Contact sales
+                    </a>
+                  </Link>
                 </div>
                 <div className="rounded-md shadow ml-4">
-                  <a
-                    href="#"
-                    className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-gray-50"
-                  >
-                    Learn more
-                  </a>
+                  <Link href="/tsk">
+                    <a className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-gray-50">
+                      Learn more
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ const AboutPage = () => {
               <blockquote className="relative bg-white rounded-lg shadow-lg">
                 <div className="rounded-t-lg px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
                   <img
-                    src="https://tailwindui.com/img/logos/workcation-logo-sky-600-mark-gray-800-and-sky-600-text.svg"
+                    src="/static/images/BP_Logo-Large.png"
                     alt="Workcation"
                     className="h-8"
                   />
@@ -134,18 +134,19 @@ const AboutPage = () => {
                   </div>
                 </div>
                 <cite className="relative flex items-center sm:items-start bg-sky-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
-                  <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
-                    <img
-                      className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-sky-300"
-                      src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80"
-                      alt=""
+                  <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2 w-12 h-12 sm:w-20 sm:h-20">
+                    <Image
+                      className="rounded-full bg-sky-300"
+                      layout="fill"
+                      src="/avatar.jpg"
+                      alt="William Wilder Profile"
                     />
                   </div>
                   <span className="relative ml-4 text-sky-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
-                    <p className="text-white font-semibold sm:inline">
-                      Judith Black
+                    <p className="text-white font-semibold sm:inline mr-1">
+                      William Wilder
                     </p>{" "}
-                    <p className="sm:inline">CEO at Workcation</p>
+                    <p className="sm:inline">Creator of Bulletproof Code</p>
                   </span>
                 </cite>
               </blockquote>

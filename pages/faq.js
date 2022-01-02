@@ -1,13 +1,24 @@
+import { nanoid } from "nanoid";
 import MainLayout from "../layouts/MainLayout";
 
 const faqs = [
   {
-    id: 1,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    question: "How did you get started in tech?",
+    answer: "TSK",
   },
-  // More questions...
+  {
+    question:
+      "Can I get a job as a developer with no experience (and no college degree)?",
+    answer: "TSK",
+  },
+  {
+    question: "I want to become a front-end developer. Where do I start?",
+    answer: "TSK",
+  },
+  {
+    question: "How can I stay consistent in my learning?",
+    answer: "TSK",
+  },
 ];
 
 const FAQPage = () => {
@@ -21,7 +32,7 @@ const FAQPage = () => {
           <dl className="divide-y divide-gray-200">
             {faqs.map((faq) => (
               <div
-                key={faq.id}
+                key={nanoid()}
                 className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8"
               >
                 <dt className="text-base font-medium text-gray-900 md:col-span-5">
