@@ -25,6 +25,7 @@
 - Add [Preact](https://github.com/leerob/leerob.io/blob/main/package.json)
 - Add Motion Animations
 - Add Font Select Colors & Hover/Focus States
+- Make Contact Form actually submit!
 - Add Accessibility
 - Pagination on Blog Page
 - A/B Test the Opt-in Pages
