@@ -5,7 +5,8 @@ import { allBlogPosts } from "../utils/blog.helpers.mjs";
 async function generate() {
   const feed = new RSS({
     title: "Bulletproof Code Blog",
-    description: "Front-end developer tsk",
+    description:
+      "Bulletproof Code is a passion project dedicated to taking anyone with any level of technical knowledge and giving them the skills, mentality, and knowledge necessary to begin a career as a software developer!",
     managingEditor: "William Wilder",
     webMaster: "William Wilder",
     language: "en",

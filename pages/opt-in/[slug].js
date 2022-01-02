@@ -42,7 +42,6 @@ export async function getStaticPaths() {
 
   return {
     paths: allOfferPaths,
-    //     TSK: Turn this into a redirect to the home offer
     fallback: false,
   };
 }

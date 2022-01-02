@@ -14,10 +14,9 @@
 
 ### Optimizations
 
-1. Solve "TSK" Messages
-
-- Page Transitions
 - Google Lighthouse Fixes
+- Solve "TSK" Messages
+- Page Transitions
 - Add [Preact](https://github.com/leerob/leerob.io/blob/main/package.json)
 - Add Motion Animations
 - Add Font Select Colors & Hover/Focus States

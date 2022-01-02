@@ -7,7 +7,7 @@ const Container = ({ children, page, ...customMeta, }) => {
   const meta = {
     title:
       `${page || "Bulletproof Blog"} | ${!page ? "Front-End Developer Tips, Techniques, and Tutorials" : "Bulletproof Blog"}`,
-    description: `Front-end developer tsk`,
+    description: `Bulletproof Code is a passion project dedicated to taking anyone with any level of technical knowledge and giving them the skills, mentality, and knowledge necessary to begin a career as a software developer!`,
     image: "https://bulletproof-code.com/static/images/banner.png",
     type: "website",
     ...customMeta,

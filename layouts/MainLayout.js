@@ -6,7 +6,6 @@ const MainLayout = ({ children, page }) => {
   return (
     <Container page={page}>
       <Header />
-      {/* TSK: You can put the main styles (for all layouts) in the global.css file */}
       <main className="max-w-7xl min-h-screen mx-auto px-6 mt-6 lg:mt-12">
         {children}
       </main>

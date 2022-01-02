@@ -1,9 +1,12 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import { postData } from "../utils/http.helpers";
 
 const ContactPage = () => {
+  const router = useRouter();
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -33,7 +36,7 @@ const ContactPage = () => {
     setMessage("");
 
     // Redirect
-    // TSK
+    router.push("/blog");
   };
 
   return (

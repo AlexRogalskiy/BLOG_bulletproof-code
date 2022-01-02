@@ -7,8 +7,6 @@ const DoubleDownload = ({ offerDetails }) => {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState(false);
 
-  console.log("offerDetails:", offerDetails);
-
   return (
     <article className="relative py-16 overflow-hidden">
       <section className="relative">
@@ -17,7 +15,6 @@ const DoubleDownload = ({ offerDetails }) => {
             <div>
               <div>
                 <span className="h-12 w-12 rounded-md flex items-center justify-center bg-sky-600">
-                  {/* TSK */}
                   <CalendarIcon
                     className="h-6 w-6 text-white"
                     aria-hidden="true"
@@ -45,7 +42,6 @@ const DoubleDownload = ({ offerDetails }) => {
               <blockquote>
                 <div>
                   <p className="text-base text-gray-500">
-                    {/* TSK */}
                     &ldquo;{offerDetails.downloads[0].testimonial.quote}&rdquo;
                   </p>
                 </div>

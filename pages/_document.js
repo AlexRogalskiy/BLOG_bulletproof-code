@@ -44,9 +44,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           href="/static/favicons/safari-pinned-tab.svg"
           rel="mask-icon"
         />
-        {/* TSK */}
-        <meta content="#ffffff" name="theme-color" />
-        <meta content="#ffffff" name="msapplication-TileColor" />
+        <meta content="#0ea5e9" name="theme-color" />
+        <meta content="#f9fafb" name="msapplication-TileColor" />
         <meta
           content="/static/favicons/browserconfig.xml"
           name="msapplication-config"
