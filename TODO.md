@@ -1,9 +1,5 @@
 ### Pages
 
-1. About
-2. Contact
-3. FAQ
-
 - Wall of Love
 - Members Only Page
 - Dynamic thank you page "/thank-you/blog-account" for users who sign up via the blog comments
@@ -19,8 +15,8 @@
 ### Optimizations
 
 1. Solve "TSK" Messages
-2. Page Transitions
 
+- Page Transitions
 - Google Lighthouse Fixes
 - Add [Preact](https://github.com/leerob/leerob.io/blob/main/package.json)
 - Add Motion Animations
@@ -40,10 +36,6 @@
 
 ### Other
 
-1. Create FB + Pintrest Ads for all the checklists and full ebook
-2. Do Reddit/FB Pre-Launch Strategy
-3. Write 3-5 more emails for Nurture Sequence
-4. Write README.md file
-5. Newsletter Signup Flow
+- Newsletter Signup Flow
 
 ---
