@@ -2,7 +2,7 @@ import MainLayout from "../layouts/MainLayout";
 
 const TermsAndConditions = () => {
   return (
-    <MainLayout>
+    <MainLayout page="Terms & Conditions">
       <article className="text-page max-w-prose mx-auto">
         <h1>Terms and Conditions</h1>
         <p>Last updated: January 01, 2022</p>

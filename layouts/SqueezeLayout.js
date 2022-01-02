@@ -4,6 +4,7 @@ import Container from "../components/Structural/Container";
 
 const SqueezeLayout = ({ children, offer }) => {
   const [loadScript, setLoadScript] = useState(false);
+
   useEffect(() => {
     setLoadScript(true);
   }, []);

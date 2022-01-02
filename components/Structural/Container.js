@@ -1,11 +1,12 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-const Container = ({ children, ...customMeta }) => {
+const Container = ({ children, page, ...customMeta, }) => {
   const router = useRouter();
+
   const meta = {
     title:
-      "Bulletproof Blog | Front-End Developer Tips, Techniques, and Tutorials",
+      `${page || "Bulletproof Blog"} | ${!page ? "Front-End Developer Tips, Techniques, and Tutorials" : "Bulletproof Blog"}`,
     description: `Front-end developer tsk`,
     image: "https://bulletproof-code.com/static/images/banner.png",
     type: "website",

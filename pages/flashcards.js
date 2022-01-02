@@ -82,7 +82,7 @@ const Flashcards = ({ flashcards }) => {
   }, [sortBy]);
 
   return (
-    <MainLayout>
+    <MainLayout page="Coding Flashcards">
       {/* Mobile Filters */}
       <MobileListCategories
         open={mobileFiltersOpen}

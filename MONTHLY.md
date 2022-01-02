@@ -3,13 +3,11 @@
 ## JANUARY
 
 - [] Publish BP FE Guide & Ads
-- [] Finish PP, T&C, About, Contact Pages
-- [] Add Comments and Auth to the Blog
+- [] Finish About, Contact Pages
 - [] Solve most Blog Page "TSK" Messages
 - [] Plan the Startup for the Series in February
 - [] Finish Codefi JavaScript Notes
 - [] Clean Up Notion
-- [] Update BP GitHub Readme and Optimize Profile
 - [] Study Market Research & Content Creators
 - [] Create Social Media Plan
 - [] Write 30 Days worth of Nurture Sequence

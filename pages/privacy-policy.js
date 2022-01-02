@@ -2,7 +2,7 @@ import MainLayout from "../layouts/MainLayout";
 
 const PrivacyPolicy = () => {
   return (
-    <MainLayout>
+    <MainLayout page="Privacy Policy">
       <article className="text-page max-w-prose mx-auto">
         <h1>Privacy Policy</h1>
         <p>Last updated: January 01, 2022</p>
