@@ -13,63 +13,78 @@ const AboutPage = () => {
         <section className="pt-16">
           <div className="text-base max-w-prose mx-auto lg:max-w-none">
             <h2 className="text-base text-sky-600 font-semibold tracking-wide uppercase">
-              Front-End
+              Our Mission
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-1">
               What is Bulletproof Code?
             </p>
           </div>
           <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
-            <p className="text-lg text-gray-500">
-              Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum
-              urna sed consectetur neque tristique pellentesque. Blandit amet,
-              sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi
-              vel porttitor vitae ut. Amet vitae fames senectus vitae.
+            <p className="text-lg text-gray-500 mb-4">
+              Bulletproof Code is a passion project dedicated to taking anyone
+              with any level of technical knowledge and giving them the skills,
+              mentality, and knowledge necessary to begin a career as a software
+              developer!
             </p>
           </div>
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
             <div className="relative z-10">
               <div className="prose prose-sky text-gray-500 mx-auto lg:max-w-none">
                 <p>
-                  Sollicitudin tristique eros erat odio sed vitae, consequat
-                  turpis elementum. Lorem nibh vel, eget pretium arcu vitae.
-                  Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                  Our goal is to cultivate an engaging and fun front-end
+                  learning community and pave a path for 1000+ students of code
+                  to land their first job. To do this, we focus on:
                 </p>
                 <ul role="list">
-                  <li>Quis elit egestas venenatis mattis dignissim.</li>
+                  <li>Creating world-class learning materials.</li>
                   <li>
-                    Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+                    Listening to what is working with our students and others.
                   </li>
-                  <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                  <li>
+                    Giving away lots of great accessible learning sources and
+                    guides.
+                  </li>
                 </ul>
                 <p>
-                  Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                  tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                  semper. Pellentesque in venenatis vestibulum consectetur nibh
-                  id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi
-                  enim fermentum lacus in. Viverra.
+                  These pillars came about because when I was (desperately)
+                  trying to learn to program, I needed a guide or mentor that
+                  embodied these core characteristics. I wanted one place where
+                  there were others like me trying to land a job in tech that
+                  didn't cost a dime, and the resources were value-packed and
+                  actionable.
                 </p>
                 <h3>I'm here to help</h3>
                 <p>
-                  Tincidunt integer commodo, cursus etiam aliquam neque, et.
-                  Consectetur pretium in volutpat, diam. Montes, magna cursus
-                  nulla feugiat dignissim id lobortis amet. Laoreet sem est
-                  phasellus eu proin massa, lectus. Diam rutrum posuere donec
-                  ultricies non morbi. Mi a platea auctor mi.
+                  You are in the right place. I have been a developer for many
+                  years and love giving my experience and knowledge to humans
+                  like yourself.
+                </p>
+                <p>
+                  At this point, over 100+ of my students in the past three
+                  years learned to code and have gotten their first job! I live
+                  and breathe for the moments when a pupil of mine has
+                  completely transformed their life and went from unhappy,
+                  broke, or lost to excited, wealthy, and on a great path!
+                </p>
+                <p>
+                  If you are reading this, I am so glad you have found
+                  Bulletproof Code. We are 100% focused on your success and
+                  future! Sometimes it feels like I want my students to succeed
+                  more than they do! 🥸
                 </p>
               </div>
               <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
                 <div className="rounded-md shadow">
-                  <Link href="/tsk">
+                  <Link href="/">
                     <a className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700">
-                      Contact sales
+                      Let's get started
                     </a>
                   </Link>
                 </div>
                 <div className="rounded-md shadow ml-4">
-                  <Link href="/tsk">
+                  <Link href="/blog">
                     <a className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-gray-50">
-                      Learn more
+                      Read the blog
                     </a>
                   </Link>
                 </div>
@@ -126,21 +141,23 @@ const AboutPage = () => {
                       <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                     </svg>
                     <p className="relative">
-                      Tincidunt integer commodo, cursus etiam aliquam neque, et.
-                      Consectetur pretium in volutpat, diam. Montes, magna
-                      cursus nulla feugiat dignissim id lobortis amet. Laoreet
-                      sem est phasellus eu proin massa, lectus.
+                      Some say seeing is believing, and I have seen people from
+                      all walks of life with no experience and all sorts of
+                      obstacles thrive in computer programming and launch a
+                      rewarding career in technology!
                     </p>
                   </div>
                 </div>
                 <cite className="relative flex items-center sm:items-start bg-sky-600 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
-                  <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2 w-12 h-12 sm:w-20 sm:h-20">
-                    <Image
-                      className="rounded-full bg-sky-300"
-                      layout="fill"
-                      src="/avatar.jpg"
-                      alt="William Wilder Profile"
-                    />
+                  <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2 ">
+                    <div className="w-12 h-12 sm:w-20 sm:h-20 relative">
+                      <Image
+                        className="rounded-full bg-sky-300"
+                        layout="fill"
+                        src="/avatar.jpg"
+                        alt="William Wilder Profile"
+                      />
+                    </div>
                   </div>
                   <span className="relative ml-4 text-sky-300 font-semibold leading-6 sm:ml-24 sm:pl-1">
                     <p className="text-white font-semibold sm:inline mr-1">
