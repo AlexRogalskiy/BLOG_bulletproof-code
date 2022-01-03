@@ -1,27 +1,27 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Head from "next/head";
 import { Auth0Provider } from "@auth0/auth0-react";
-import { useRouter } from "next/router";
-import { pageview } from "../utils/pixel.helpers";
+// import { useRouter } from "next/router";
+// import * as fbq from "../utils/pixel.helpers";
 import "../styles/global.css";
 
 export default function MyApp({ Component, pageProps }) {
-  const router = useRouter();
+  // const router = useRouter();
 
-  // * Facebook Pixel
-  useEffect(() => {
-    // This pageview only triggers the first time (it's important for Pixel to have real information)
-    pageview();
+  // // * Facebook Pixel
+  // useEffect(() => {
+  //   // This pageview only triggers the first time (it's important for Pixel to have real information)
+  //   fbq.pageview();
 
-    const handleRouteChange = () => {
-      pageview();
-    };
+  //   const handleRouteChange = () => {
+  //     fbq.pageview();
+  //   };
 
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+  //   router.events.on("routeChangeComplete", handleRouteChange);
+  //   return () => {
+  //     router.events.off("routeChangeComplete", handleRouteChange);
+  //   };
+  // }, [router.events]);
 
   return (
     <Auth0Provider
