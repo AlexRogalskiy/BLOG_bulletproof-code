@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export function middleware(req, ev) {
   const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.ck.page *.convertkit.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.ck.page *.convertkit.com *.facebook.net;
     child-src *.youtube.com *.google.com *.ck.page *.covertkit.com *.convertki https://bulletproof-code.us.auth0.com;
     style-src 'self' 'unsafe-inline' *.googleapis.com;
     img-src * blob: data:;

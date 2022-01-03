@@ -1,4 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { FB_PIXEL_ID } from "../utils/pixel.helpers";
+
 // import Script from "next/script";
 
 export default function Document(props) {
@@ -57,7 +59,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             height="1"
             width="1"
             style={{ display: "none" }}
-            src={`https://www.facebook.com/tr?id=${process.env.NEXT_PUBLIC_FB_PIXEL_ID}&ev=PageView&noscript=1`}
+            src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>
 

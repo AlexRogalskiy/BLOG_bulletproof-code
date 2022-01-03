@@ -6,6 +6,7 @@ import { MailIcon } from "@heroicons/react/solid";
 import { postData } from "../../utils/http.helpers";
 import Image from "next/image";
 import BigRedCTA from "./BigRedCTA";
+import * as fbq from "../../utils/pixel.helpers";
 
 // TSK: Add error handling
 
@@ -30,7 +31,10 @@ const BasicModal = ({
 
     setError(res.error);
 
-    if (res.ok) router.push(`/thank-you/${slug}`);
+    if (res.ok) {
+      fbq.event("Lead", { content_name: title });
+      router.push(`/thank-you/${slug}`);
+    }
   };
 
   return (
