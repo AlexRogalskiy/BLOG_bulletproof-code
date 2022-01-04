@@ -15,6 +15,7 @@ import Error from "next/error";
 import CategoryBubble from "../../components/Blog/CategoryBubble";
 import TableOfContents from "../../components/Blog/TableOfContents";
 import CommentContainer from "../../components/Comments/CommentContainer";
+import BlogPostImage from "../../components/Blog/BlogPostImage";
 
 const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
   const router = useRouter();
@@ -58,6 +59,7 @@ const BlogPostTemplate = ({ frontMatter, mdxSource }) => {
                 SyntaxHighlighter,
                 TableOfContents,
                 InlineForm,
+                BlogPostImage,
               }}
               lazy={true}
             />
