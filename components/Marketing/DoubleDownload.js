@@ -98,7 +98,7 @@ const DoubleDownload = ({ offerDetails }) => {
                 <div className="mt-6">
                   <button
                     onClick={() => setOpen(true)}
-                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-600 hover:bg-sky-700"
+                    className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-sky-700 hover:bg-sky-800"
                   >
                     {offerDetails.downloads[1].cta}
                   </button>
