@@ -24,7 +24,7 @@ const BrandPanel = ({ type, slug, cta }) => {
   return (
     <div className="max-w-7xl mx-auto py-16 sm:px-6 lg:px-8">
       <div className="bg-sky-600 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
-        <div className="pt-10 pb-12 px-6 sm:pt-16 xl:px-16 lg:py-16 lg:pr-0 xl:py-20">
+        <div className="pt-10 pb-12 px-6 sm:pt-16 xl:px-12 lg:py-16 lg:pr-0 xl:py-20">
           <div className="lg:self-center">
             <h2 className="text-2xl font-extrabold text-white xl:text-4xl">
               <span className="block text-gray-100 text-xl xl:text-3xl mb-2">
@@ -34,7 +34,7 @@ const BrandPanel = ({ type, slug, cta }) => {
                 Download Your Bulletproof Front-End Guide.
               </span>
             </h2>
-            <p className="mt-4 text-lg leading-6 text-sky-200">
+            <p className="mt-4 text-lg leading-6 text-sky-200 font-medium">
               This comprehensive {type} is all you need to succeed in your goal
               of landing your first developer position.
             </p>

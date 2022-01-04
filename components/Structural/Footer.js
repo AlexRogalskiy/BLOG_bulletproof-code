@@ -85,7 +85,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
                   Content
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -93,7 +93,7 @@ const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -102,7 +102,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
                   Company
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -110,7 +110,7 @@ const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -121,7 +121,7 @@ const Footer = () => {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div className="">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
                   Support
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -129,7 +129,7 @@ const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -138,7 +138,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
                   Legal
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
@@ -146,7 +146,7 @@ const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
+                        className="text-base text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -157,10 +157,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="hidden xl:block mt-8 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+            <h3 className="text-sm font-semibold text-gray-600 tracking-wider uppercase">
               Subscribe to our newsletter
             </h3>
-            <p className="mt-4 text-base text-gray-500">
+            <p className="mt-4 text-base text-gray-600">
               The latest news, articles, and resources, sent to your inbox
               weekly.
             </p>
@@ -185,7 +185,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+          <p className="mt-8 text-base text-gray-500 md:mt-0 md:order-1">
             &copy; 2021 Bulletproof Code. All rights reserved.
           </p>
         </div>

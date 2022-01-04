@@ -35,7 +35,7 @@ const BlogCard = ({ postDetails, isPriority = false }) => {
         </a>
       </Link>
       <Link href={"/blog/" + postDetails.slug}>
-        <a className="text-blue-500 px-8 block py-4 font-medium text-lg hover:text-sky-600 hover:bg-gray-100 transition-colors">
+        <a className="text-blue-600 px-8 block py-4 font-medium text-lg hover:text-sky-700 hover:bg-gray-100 transition-colors">
           Read More
         </a>
       </Link>
